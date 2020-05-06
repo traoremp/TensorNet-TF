@@ -1,9 +1,10 @@
-import tensorflow as tf
+# import tensorflow as tf
+import tensorflow.compat.v1 as tf
 from .aux import get_var_wrap
 
 def linear(inp,
            out_size,
-           weights_initializer=tf.contrib.layers.xavier_initializer(uniform=False),
+           weights_initializer=tf.initializers.glorot_normal(),
            weights_regularizer=None,
            biases_initializer=tf.zeros_initializer,
            biases_regularizer=None,

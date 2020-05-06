@@ -9,7 +9,8 @@ import time
 #import tensorflow.python.platform
 import numpy as np
 from six.moves import xrange  # pylint: disable=redefined-builtin
-import tensorflow as tf
+# import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 import input_data
 import net
@@ -26,7 +27,7 @@ flags.DEFINE_integer('batch_size', 100, 'Batch size.  '
 flags.DEFINE_integer('overview_steps', 100, 'Overview period')
 flags.DEFINE_integer('evaluation_steps', 1000, 'Overview period')
 flags.DEFINE_string('data_dir', '../../data/', 'Directory to put the training data.')
-flags.DEFINE_string('log_dir', './log', 'Directory to put log files.')
+#flags.DEFINE_string('log_dir', './log', 'Directory to put log files.')
 
 def fill_feed_dict(batch, train_phase=True):
     """Fills the feed_dict for training the given step.
@@ -104,7 +105,7 @@ def run_training(extra_opts={}):
                                                          precision_validation)
         graph = tf.get_default_graph()
         loss = graph.get_tensor_by_name('loss:0')
-        train_op = graph.get_tensor_by_name('train_op:0')
+        train_op = graph.get_operation_by_name('train_op')
         correct_count = graph.get_tensor_by_name('correct_count:0')
         #Create summary stuff
         regular_summaries_names = ['loss', 'learning_rate']
@@ -154,7 +155,8 @@ def run_training(extra_opts={}):
 
             # Save a checkpoint and evaluate the model periodically.
             if (step) % FLAGS.evaluation_steps == 0 or step == FLAGS.max_steps:
-                saver.save(sess, FLAGS.log_dir +'/checkpoint', global_step=step)
+                #saver.save(sess, FLAGS.log_dir +'/checkpoint', global_step=step)
+                saver.save(sess, './log'+'/checkpoint', global_step=step)
                 # Evaluate against the training set.
                 print('Training Data Eval:')
                 precision_t, obj_t = do_eval(sess,

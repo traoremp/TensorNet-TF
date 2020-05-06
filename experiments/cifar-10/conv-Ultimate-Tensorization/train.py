@@ -10,7 +10,8 @@ import time
 #import tensorflow.python.platform
 import numpy as np
 from six.moves import xrange  # pylint: disable=redefined-builtin
-import tensorflow as tf
+# import tensorflow as tf
+import tensorflow.compat.v1 as tf
 import re
 import input_data
 import sys

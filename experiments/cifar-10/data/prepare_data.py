@@ -14,7 +14,7 @@ batches_dir = 'cifar-10-batches-py'
 
 def unpickle(fname):
     fo = open(fname, 'rb')
-    d = pickle.load(fo)
+    d = pickle.load(fo, encoding='latin1')
     fo.close()
     data = np.reshape(d['data'], [-1, 32, 32, 3], order='F')
     data = np.transpose(data, [0, 2, 1, 3])

@@ -1,11 +1,13 @@
 import numpy as np
 import time
-import tensorflow as tf
+# import tensorflow as tf
+import tensorflow.compat.v1 as tf
 import sys
 
 sys.path.append('../../')
 
-import tensorflow as tf
+# import tensorflow as tf
+import tensorflow.compat.v1 as tf
 import tensornet
 
 def run_test(batch_size=30, test_num=10, tol=1e-5):

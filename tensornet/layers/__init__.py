@@ -5,3 +5,4 @@ from .conv import *
 from .tt_conv import *
 from .tt_conv_full import *
 from .tt_conv_direct import *
+from .quant import *

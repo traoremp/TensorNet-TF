@@ -1,12 +1,12 @@
-import tensorflow as tf
-
+# import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 def get_var_wrap(name,
-                 shape,
-                 initializer,
-                 regularizer,
-                 trainable,
-                 cpu_variable):
+                 shape = None,
+                 initializer = None,
+                 regularizer = None,
+                 trainable = None,
+                 cpu_variable = None):
     if cpu_variable:
         with tf.device('/cpu:0'):
             return tf.get_variable(name,

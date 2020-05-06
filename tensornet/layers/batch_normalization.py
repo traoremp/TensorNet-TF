@@ -1,4 +1,5 @@
-import tensorflow as tf
+# import tensorflow as tf
+import tensorflow.compat.v1 as tf
 from .aux import get_var_wrap
 
 def batch_normalization(inp,

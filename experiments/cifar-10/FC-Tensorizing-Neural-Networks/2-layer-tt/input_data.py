@@ -1,4 +1,5 @@
-import tensorflow as tf
+# import tensorflow as tf
+import tensorflow.compat.v1 as tf
 import numpy as np
 
 class DataSet(object):
@@ -59,8 +60,8 @@ def read_data_sets(data_dir):
     mean = np.mean(train_images, axis=0)[np.newaxis, :]
     std = np.std(train_images, axis=0)[np.newaxis, :]
 
-    train_images = (train_images - mean) / std;
-    validation_images = (validation_images - mean) / std;
+    train_images = (train_images - mean) / std
+    validation_images = (validation_images - mean) / std
 
     #train_images = np.reshape(train_images, (-1, 32, 32, 3))
     #validation_images = np.reshape(validation_images, (-1, 32, 32, 3))    

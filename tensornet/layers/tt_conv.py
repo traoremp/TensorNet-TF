@@ -1,4 +1,5 @@
-import tensorflow as tf
+# import tensorflow as tf
+import tensorflow.compat.v1 as tf
 import numpy as np
 import math
 from .aux import get_var_wrap
@@ -10,9 +11,9 @@ def tt_conv(inp,
             ranks,
             strides=[1, 1],
             padding='SAME',
-            filters_initializer=tf.contrib.layers.xavier_initializer(uniform=False),
+            filters_initializer=tf.initializers.glorot_normal(),
             filters_regularizer=None,
-            cores_initializer=tf.contrib.layers.xavier_initializer(uniform=False),
+            cores_initializer=tf.initializers.glorot_normal(),
             cores_regularizer=None,
             biases_initializer=tf.zeros_initializer,
             biases_regularizer=None,
