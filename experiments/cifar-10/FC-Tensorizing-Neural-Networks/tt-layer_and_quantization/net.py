@@ -23,8 +23,7 @@ opts['out_modes_2'] = np.array([4, 4, 4, 4, 4, 4], dtype='int32')
 opts['ranks_2'] = np.array([1, 3, 3, 3, 3, 3, 1], dtype='int32')
 
 
-opts['use_dropout'] = True
-opts['learning_rate_init'] = 0.0003
+opts['learning_rate_init'] = 0.06
 opts['learning_rate_decay_steps'] = 2000
 opts['learning_rate_decay_weight'] = 0.64
 
@@ -70,9 +69,9 @@ def inference(images, train_phase):
                                      scope='tt_' + str(len(layers)),
                                      biases_initializer=None))
 
-    # layers.append(tensornet.layers.shift_batch_norm(layers[-1],
-    #                                                    train_phase,
-    #                                                    scope='BN_' + str(len(layers))))
+    layers.append(tensornet.layers.shift_batch_norm(layers[-1],
+                                                       train_phase,
+                                                       scope='BN_' + str(len(layers))))
 
     layers.append(tensornet.layers.quant_2bits(layers[-1],
                              scope='quant_' + str(len(layers))))
@@ -87,9 +86,9 @@ def inference(images, train_phase):
                                      scope='tt_' + str(len(layers)),
                                      biases_initializer=None))
 
-    # layers.append(tensornet.layers.shift_batch_norm(layers[-1],
-    #                                                    train_phase,
-    #                                                    scope='BN_' + str(len(layers))))
+    layers.append(tensornet.layers.shift_batch_norm(layers[-1],
+                                                       train_phase,
+                                                       scope='BN_' + str(len(layers))))
 
     layers.append(tensornet.layers.quant_2bits(layers[-1],
                              scope='quant_' + str(len(layers))))

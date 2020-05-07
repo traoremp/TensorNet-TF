@@ -141,6 +141,10 @@ def run_training(extra_opts={}):
 
             _, loss_value = sess.run([train_op, loss],
                                      feed_dict=feed_dict)
+
+            # #with tf.variable_scope("tt_1"):
+            # sh = graph.get_tensor_by_name('tt_1/sh:0')
+            # print("INPUT SHAPEEEEEEEEEEEEEEEE =====================================> ", sh.eval(session=sess))
             duration = time.time() - start_time
             # Write the summaries and print an overview fairly often.
             if step % FLAGS.overview_steps == 0:
