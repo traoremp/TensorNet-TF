@@ -16,14 +16,21 @@ IMAGE_PIXELS = IMAGE_SIZE * IMAGE_SIZE * IMAGE_DEPTH
 opts = {}
 opts['inp_modes_1'] = np.array([4, 4, 4, 4, 4, 3], dtype='int32')
 opts['out_modes_1'] = np.array([8, 8, 8, 8, 8, 8], dtype='int32')
-opts['ranks_1'] = np.array([1, 3, 3, 3, 3, 3, 1], dtype='int32')
+opts['ranks_1'] = np.array([1, 8, 8, 8, 8, 8, 1], dtype='int32')
 
 opts['inp_modes_2'] = opts['out_modes_1']
 opts['out_modes_2'] = np.array([4, 4, 4, 4, 4, 4], dtype='int32')
-opts['ranks_2'] = np.array([1, 3, 3, 3, 3, 3, 1], dtype='int32')
+opts['ranks_2'] = np.array([1, 8, 8, 8, 8, 8, 1], dtype='int32')
 
+opts['inp_modes_3'] = opts['out_modes_2']
+opts['out_modes_3'] = np.array([4, 4, 4, 4, 4, 4], dtype='int32')
+opts['ranks_3'] = np.array([1, 8, 8, 8, 8, 8, 1], dtype='int32')
 
-opts['learning_rate_init'] = 0.06
+opts['inp_modes_4'] = opts['out_modes_3']
+opts['out_modes_4'] = np.array([4, 4, 4, 4, 4, 4], dtype='int32')
+opts['ranks_4'] = np.array([1, 8, 8, 8, 8, 8, 1], dtype='int32')
+
+opts['learning_rate_init'] = 0.001
 opts['learning_rate_decay_steps'] = 2000
 opts['learning_rate_decay_weight'] = 0.64
 
@@ -82,6 +89,38 @@ def inference(images, train_phase):
                                      opts['inp_modes_2'],
                                      opts['out_modes_2'],
                                      opts['ranks_2'],
+                                     binarize_input=False,
+                                     scope='tt_' + str(len(layers)),
+                                     biases_initializer=None))
+
+    layers.append(tensornet.layers.shift_batch_norm(layers[-1],
+                                                       train_phase,
+                                                       scope='BN_' + str(len(layers))))
+
+    layers.append(tensornet.layers.quant_2bits(layers[-1],
+                             scope='quant_' + str(len(layers))))
+
+##########################################
+    layers.append(tensornet.layers.binarized_tt(layers[-1],
+                                     opts['inp_modes_3'],
+                                     opts['out_modes_3'],
+                                     opts['ranks_3'],
+                                     binarize_input=False,
+                                     scope='tt_' + str(len(layers)),
+                                     biases_initializer=None))
+
+    layers.append(tensornet.layers.shift_batch_norm(layers[-1],
+                                                       train_phase,
+                                                       scope='BN_' + str(len(layers))))
+
+    layers.append(tensornet.layers.quant_2bits(layers[-1],
+                             scope='quant_' + str(len(layers))))
+
+##########################################
+    layers.append(tensornet.layers.binarized_tt(layers[-1],
+                                     opts['inp_modes_4'],
+                                     opts['out_modes_4'],
+                                     opts['ranks_4'],
                                      binarize_input=False,
                                      scope='tt_' + str(len(layers)),
                                      biases_initializer=None))
