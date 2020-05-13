@@ -14,26 +14,27 @@ IMAGE_DEPTH = 3
 IMAGE_PIXELS = IMAGE_SIZE * IMAGE_SIZE * IMAGE_DEPTH
 
 opts = {}
-opts['inp_modes_1'] = np.array([4, 4, 4, 4, 4, 3], dtype='int32')
-opts['out_modes_1'] = np.array([8, 8, 8, 8, 8, 8], dtype='int32')
-opts['ranks_1'] = np.array([1, 8, 8, 8, 8, 8, 1], dtype='int32')
+opts[0] = np.array([4, 4, 4, 4, 4, 3], dtype='int32')
+opts[1] = np.array([8, 8, 8, 8, 8, 8], dtype='int32')
+opts[2] = np.array([1, 4, 4, 4, 4, 4, 1], dtype='int32')
 
-opts['inp_modes_2'] = opts['out_modes_1']
-opts['out_modes_2'] = np.array([4, 4, 4, 4, 4, 4], dtype='int32')
-opts['ranks_2'] = np.array([1, 8, 8, 8, 8, 8, 1], dtype='int32')
+opts[3] = opts[1]
+opts[4] = np.array([4, 4, 4, 4, 4, 4], dtype='int32')
+opts[5] = np.array([1, 4, 4, 4, 4, 4, 1], dtype='int32')
 
-opts['inp_modes_3'] = opts['out_modes_2']
-opts['out_modes_3'] = np.array([4, 4, 4, 4, 4, 4], dtype='int32')
-opts['ranks_3'] = np.array([1, 8, 8, 8, 8, 8, 1], dtype='int32')
+opts[6] = opts[4]
+opts[7] = np.array([4, 4, 4, 4, 4, 4], dtype='int32')
+opts[8] = np.array([1, 4, 4, 4, 4, 4, 1], dtype='int32')
 
-opts['inp_modes_4'] = opts['out_modes_3']
-opts['out_modes_4'] = np.array([4, 4, 4, 4, 4, 4], dtype='int32')
-opts['ranks_4'] = np.array([1, 8, 8, 8, 8, 8, 1], dtype='int32')
+opts[9] = opts[7]
+opts[10] = np.array([4, 4, 4, 4, 4, 4], dtype='int32')
+opts[11] = np.array([1, 4, 4, 4, 4, 4, 1], dtype='int32')
 
+opts['use_dropout'] = True
 opts['learning_rate_init'] = 0.001
 opts['learning_rate_decay_steps'] = 2000
-opts['learning_rate_decay_weight'] = 0.64
-
+opts['learning_rate_decay_weight'] = (0.0000003/opts['learning_rate_init'] )**(1./opts['learning_rate_decay_steps']) # From BNN
+opts["n_hidden_layers"] = 3
 def placeholder_inputs():
     """Generate placeholder variables to represent the input tensors.
 
@@ -61,76 +62,31 @@ def inference(images, train_phase):
     tn_init = lambda dev: lambda shape: tf.truncated_normal(shape, stddev=dev)
     tu_init = lambda bound: lambda shape: tf.random_uniform(shape, minval = -bound, maxval = bound)
 
-    #dropout_rate = lambda p: (opts['use_dropout'] * (p - 1.0)) * tf.to_float(train_phase) + 1.0
+    dropout_rate = lambda p: (opts['use_dropout'] * (p - 1.0)) * tf.to_float(train_phase) + 1.0
 
-
+    # images = tf.Print(images, [tf.shape(images)], "images = ")
     layers = []
     layers.append(images)
+    
+    for k in range(opts["n_hidden_layers"]):
+        i = k * 3
+        layers.append(tensornet.layers.bnn_tt(layers[-1],
+                                                opts[i], # 0 then 3 then 6
+                                                opts[i + 1], # 1 then 4 then 7
+                                                opts[i + 2], # 2 then 5 then 8
+                                                binarize_input=False,
+                                                scope='tt_' + str(len(layers)),
+                                                biases_initializer=None))
 
+        layers.append(tensornet.layers.batch_normalization(layers[-1],
+                                                        train_phase,
+                                                        scope='BN_' + str(len(layers)), ema_decay=1e-4))
 
-    layers.append(tensornet.layers.binarized_tt(layers[-1],
-                                     opts['inp_modes_1'],
-                                     opts['out_modes_1'],
-                                     opts['ranks_1'],
-                                     binarize_input=False,
-                                     scope='tt_' + str(len(layers)),
-                                     biases_initializer=None))
-
-    layers.append(tensornet.layers.shift_batch_norm(layers[-1],
-                                                       train_phase,
-                                                       scope='BN_' + str(len(layers))))
-
-    layers.append(tensornet.layers.quant_2bits(layers[-1],
-                             scope='quant_' + str(len(layers))))
-
-
-##########################################
-    layers.append(tensornet.layers.binarized_tt(layers[-1],
-                                     opts['inp_modes_2'],
-                                     opts['out_modes_2'],
-                                     opts['ranks_2'],
-                                     binarize_input=False,
-                                     scope='tt_' + str(len(layers)),
-                                     biases_initializer=None))
-
-    layers.append(tensornet.layers.shift_batch_norm(layers[-1],
-                                                       train_phase,
-                                                       scope='BN_' + str(len(layers))))
-
-    layers.append(tensornet.layers.quant_2bits(layers[-1],
-                             scope='quant_' + str(len(layers))))
-
-##########################################
-    layers.append(tensornet.layers.binarized_tt(layers[-1],
-                                     opts['inp_modes_3'],
-                                     opts['out_modes_3'],
-                                     opts['ranks_3'],
-                                     binarize_input=False,
-                                     scope='tt_' + str(len(layers)),
-                                     biases_initializer=None))
-
-    layers.append(tensornet.layers.shift_batch_norm(layers[-1],
-                                                       train_phase,
-                                                       scope='BN_' + str(len(layers))))
-
-    layers.append(tensornet.layers.quant_2bits(layers[-1],
-                             scope='quant_' + str(len(layers))))
-
-##########################################
-    layers.append(tensornet.layers.binarized_tt(layers[-1],
-                                     opts['inp_modes_4'],
-                                     opts['out_modes_4'],
-                                     opts['ranks_4'],
-                                     binarize_input=False,
-                                     scope='tt_' + str(len(layers)),
-                                     biases_initializer=None))
-
-    layers.append(tensornet.layers.shift_batch_norm(layers[-1],
-                                                       train_phase,
-                                                       scope='BN_' + str(len(layers))))
-
-    layers.append(tensornet.layers.quant_2bits(layers[-1],
-                             scope='quant_' + str(len(layers))))
+        layers.append(tensornet.layers.quant_2bits_binary_tanh_unit(layers[-1],
+                                scope='quant_' + str(len(layers))))
+        layers.append(tf.nn.dropout(layers[-1],
+                            dropout_rate(0.6),
+                            name='dropout_' + str(len(layers))))
 
 ##########################################
 

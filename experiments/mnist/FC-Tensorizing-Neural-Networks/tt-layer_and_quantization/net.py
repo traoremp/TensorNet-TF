@@ -15,16 +15,16 @@ IMAGE_PIXELS = IMAGE_SIZE * IMAGE_SIZE * IMAGE_DEPTH
 
 opts = {}
 opts[0] = np.array([2, 2, 2, 2, 7, 7], dtype='int32')
-opts[1] = np.array([8, 8, 8, 8, 8, 8], dtype='int32')
-opts[2] = np.array([1, 3, 3, 3, 3, 3, 1], dtype='int32')
+opts[1] = np.array([4, 4, 4, 4, 4, 4], dtype='int32')
+opts[2] = np.array([1, 4, 4, 4, 4, 4, 1], dtype='int32')
 
 opts[3] = opts[1]
 opts[4] = np.array([4, 4, 4, 4, 4, 4], dtype='int32')
-opts[5] = np.array([1, 8, 8, 8, 8, 8, 1], dtype='int32')
+opts[5] = np.array([1, 4, 4, 4, 4, 4, 1], dtype='int32')
 
 opts[6] = opts[4]
 opts[7] = np.array([4, 4, 4, 4, 4, 4], dtype='int32')
-opts[8] = np.array([1, 8, 8, 8, 8, 8, 1], dtype='int32')
+opts[8] = np.array([1, 4, 4, 4, 4, 4, 1], dtype='int32')
 
 
 opts['use_dropout'] = True
@@ -65,11 +65,15 @@ def inference(images, train_phase):
     layers = []
     layers.append(images)
     
-    for _ in range(opts["n_hidden_layers"]):
-        layers.append(tensornet.layers.bnn_layer(layers[-1],
-                                        binarize_input=False,
-                                        scope='tt_' + str(len(layers)),
-                                        biases_initializer=None))
+    for k in range(opts["n_hidden_layers"]):
+        i = k * 3
+        layers.append(tensornet.layers.bnn_tt(layers[-1],
+                                                opts[i], # 0 then 3 then 6
+                                                opts[i + 1], # 1 then 4 then 7
+                                                opts[i + 2], # 2 then 5 then 8
+                                                binarize_input=False,
+                                                scope='tt_' + str(len(layers)),
+                                                biases_initializer=None))
 
         layers.append(tensornet.layers.batch_normalization(layers[-1],
                                                         train_phase,
