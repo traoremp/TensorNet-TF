@@ -1,5 +1,5 @@
 import tensorflow as tf
-from .aux import get_var_wrap
+from .aux_win import get_var_wrap
 
 def conv(inp,
          out_ch,

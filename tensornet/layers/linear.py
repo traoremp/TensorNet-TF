@@ -1,6 +1,6 @@
 # import tensorflow as tf
 import tensorflow.compat.v1 as tf
-from .aux import get_var_wrap
+from .aux_win import get_var_wrap
 
 def linear(inp,
            out_size,

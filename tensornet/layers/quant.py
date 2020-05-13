@@ -1,5 +1,5 @@
 import tensorflow.compat.v1 as tf
-from .aux import get_var_wrap
+from .aux_win import get_var_wrap
 
 #https://github.com/ivanbergonzani/binarized-neural-network/blob/master/layers.py
 def ap2(x):
@@ -39,6 +39,9 @@ def shift_batch_norm(x,
 		out = tf.multiply(ap2(gamma), xdot) + beta					# scale and shift input distribution
 	
 	return out
+#https://github.com/uranusx86/BinaryNet-on-tensorflow/blob/master/binary_layer.py
+def hard_sigmoid(x):
+    return tf.clip_by_value((x + 1.)/2., 0, 1)
 
 def binarize(x):
 	# we also have to reassign the sign gradient otherwise it will be almost everywhere equal to zero
@@ -46,10 +49,17 @@ def binarize(x):
 	with tf.get_default_graph().gradient_override_map({'Sign': 'Identity'}):
 		#return tf.sign(x)				#	<-- wrong sign doesn't return +1 for zero
 		return tf.sign(tf.sign(x)+1e-8) #	<-- this should be ok, ugly but okay
+def binary_tanh_unit(x):
+	with tf.get_default_graph().gradient_override_map({'Round': 'Identity'}):
+		return 2. * tf.round(hard_sigmoid(x)) - 1.
 
-def quant_2bits(inp,
+def binary_sigmoid_unit(x):
+	with tf.get_default_graph().gradient_override_map({'Round': 'Identity'}):
+		return tf.round(hard_sigmoid(x))
+
+def quant_2bits_binary_tanh_unit(inp,
            scope=None):
-    """ quantization layer
+    """ binary_tanh_unit
     Args:  
         inp : input tensor, float - [batch_size, prod(inp_modes)]
         scope: layer variable scope name, string
@@ -58,8 +68,21 @@ def quant_2bits(inp,
     """
 
     with tf.variable_scope(scope):
-        Wb = binarize(inp)
-        return Wb
+        inp_bin = binary_tanh_unit(inp)
+        return inp_bin
+
+def quant_2bits_binary_sigmoid_unit(inp,
+           scope=None):
+    """ binary_sigmoid_unit
+    Args:  
+        inp : input tensor, float - [batch_size, prod(inp_modes)]
+        scope: layer variable scope name, string
+    Returns:
+        out: output tensor, float - [batch_size, out_size]
+    """
+    with tf.variable_scope(scope):
+        inp_bin = binary_sigmoid_unit(inp)
+        return inp_bin
 
 # def quant_8bits(inp,
 #            out_size,

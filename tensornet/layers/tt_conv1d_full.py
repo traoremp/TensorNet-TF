@@ -2,7 +2,7 @@
 import tensorflow.compat.v1 as tf
 import numpy as np
 import math
-from .aux import get_var_wrap
+from .aux_win import get_var_wrap
 import tt_conv_full
 
 def tt_conv1d_full(inp,         
