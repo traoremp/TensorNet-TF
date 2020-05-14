@@ -12,19 +12,41 @@ NUM_CLASSES = 10
 IMAGE_SIZE = 28
 IMAGE_DEPTH = 1
 IMAGE_PIXELS = IMAGE_SIZE * IMAGE_SIZE * IMAGE_DEPTH
-
 opts = {}
 opts[0] = np.array([2, 2, 2, 2, 7, 7], dtype='int32')
 opts[1] = np.array([4, 4, 4, 4, 4, 4], dtype='int32')
-opts[2] = np.array([1, 4, 4, 4, 4, 4, 1], dtype='int32')
+inp = opts[0]
+out = opts[1]
+# print(inp[1:])
+r1_full = min(inp[0]*out[0], 
+                np.prod(inp[1:]* out[1:]))
+r2_full = min(np.prod(inp[:1]*out[:1]), np.prod(inp[2:]* out[2:]))
+r3_full = min(np.prod(inp[:2]*out[:2]), np.prod(inp[3:]* out[3:]))
+r4_full = min(np.prod(inp[:3]*out[:3]), np.prod(inp[4:]* out[4:]))
+r5_full = min(np.prod(inp[:4]*out[:4]), inp[5], out[5])
+opts[2] = np.array([1, r1_full, r2_full, r3_full, r4_full, r5_full, 1], dtype='int32')
 
 opts[3] = opts[1]
 opts[4] = np.array([4, 4, 4, 4, 4, 4], dtype='int32')
-opts[5] = np.array([1, 4, 4, 4, 4, 4, 1], dtype='int32')
+inp = opts[3]
+out = opts[4]
+r1_full = min(inp[0]*out[0], np.prod(inp[1:]*out[1:]))
+r2_full = min(np.prod(inp[:1]*out[:1]), np.prod(inp[2:]* out[2:]))
+r3_full = min(np.prod(inp[:2]*out[:2]), np.prod(inp[3:]* out[3:]))
+r4_full = min(np.prod(inp[:3]*out[:3]), np.prod(inp[4:]* out[4:]))
+r5_full = min(np.prod(inp[:4]*out[:4]), inp[5], out[5])
+opts[5] = np.array([1, r1_full, r2_full, r3_full, r4_full, r5_full, 1], dtype='int32')
 
 opts[6] = opts[4]
 opts[7] = np.array([4, 4, 4, 4, 4, 4], dtype='int32')
-opts[8] = np.array([1, 4, 4, 4, 4, 4, 1], dtype='int32')
+inp = opts[6]
+out = opts[7]
+r1_full = min(inp[0]*out[0], np.prod(inp[1:]* out[1:]))
+r2_full = min(np.prod(inp[:1]*out[:1]), np.prod(inp[2:]* out[2:]))
+r3_full = min(np.prod(inp[:2]*out[:2]), np.prod(inp[3:]* out[3:]))
+r4_full = min(np.prod(inp[:3]*out[:3]), np.prod(inp[4:]* out[4:]))
+r5_full = min(np.prod(inp[:4]*out[:4]), inp[5], out[5])
+opts[8] = np.array([1, r1_full, r2_full, r3_full, r4_full, r5_full, 1], dtype='int32')
 
 
 opts['use_dropout'] = True
