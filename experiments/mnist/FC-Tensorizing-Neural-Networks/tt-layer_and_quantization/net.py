@@ -25,6 +25,7 @@ r3_full = min(np.prod(inp[:2]*out[:2]), np.prod(inp[3:]* out[3:]))
 r4_full = min(np.prod(inp[:3]*out[:3]), np.prod(inp[4:]* out[4:]))
 r5_full = min(np.prod(inp[:4]*out[:4]), inp[5], out[5])
 opts[2] = np.array([1, r1_full, r2_full, r3_full, r4_full, r5_full, 1], dtype='int32')
+print("Ranks layer 1 = ", opts[2])
 
 opts[3] = opts[1]
 opts[4] = np.array([4, 4, 4, 4, 4, 4], dtype='int32')
@@ -36,6 +37,7 @@ r3_full = min(np.prod(inp[:2]*out[:2]), np.prod(inp[3:]* out[3:]))
 r4_full = min(np.prod(inp[:3]*out[:3]), np.prod(inp[4:]* out[4:]))
 r5_full = min(np.prod(inp[:4]*out[:4]), inp[5], out[5])
 opts[5] = np.array([1, r1_full, r2_full, r3_full, r4_full, r5_full, 1], dtype='int32')
+print("Ranks layer 2 = ", opts[5])
 
 opts[6] = opts[4]
 opts[7] = np.array([4, 4, 4, 4, 4, 4], dtype='int32')
@@ -47,7 +49,7 @@ r3_full = min(np.prod(inp[:2]*out[:2]), np.prod(inp[3:]* out[3:]))
 r4_full = min(np.prod(inp[:3]*out[:3]), np.prod(inp[4:]* out[4:]))
 r5_full = min(np.prod(inp[:4]*out[:4]), inp[5], out[5])
 opts[8] = np.array([1, r1_full, r2_full, r3_full, r4_full, r5_full, 1], dtype='int32')
-
+print("Ranks layer 3 = ", opts[8])
 
 opts['use_dropout'] = True
 opts['learning_rate_init'] = 0.001
