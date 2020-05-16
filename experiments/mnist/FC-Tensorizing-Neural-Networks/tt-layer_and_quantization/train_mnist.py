@@ -15,19 +15,25 @@ import tensorflow.compat.v1 as tf
 import input_data
 import net
 
+import argparse
+parser = argparse.ArgumentParser(description='PyTorch CIFAR10 Training')
+parser.add_argument('-n', '--name', type=int, default = 200, help='save name')
+parser.add_argument('-ms', '--max_step', type=int, default = 60000, help='max step')
+parser.add_argument('-os', '--ov_step', type=int, default = 1000, help='overview step')
+parser.add_argument('-es', '--ev_step', type=int, default = 1000, help='evaluation step')
+args = parser.parse_args()
+
 tf.set_random_seed(12345)
 np.random.seed(12345)
 
 # Basic model parameters as external flags.
 flags = tf.app.flags
 FLAGS = flags.FLAGS
-flags.DEFINE_integer('max_steps', 60000, 'Number of steps to run trainer.')
+flags.DEFINE_integer('max_steps', args.max_step, 'Number of steps to run trainer.')
 flags.DEFINE_integer('batch_size', 100, 'Batch size.  '
                      'Must divide evenly into the dataset sizes.')
-flags.DEFINE_integer('overview_steps', 100, 'Overview period')
-flags.DEFINE_integer('evaluation_steps', 1000, 'Overview period')
-flags.DEFINE_string('data_dir', '../../data/', 'Directory to put the training data.')
-# flags.DEFINE_string('log_dir', './log', 'Directory to put log files.')
+flags.DEFINE_integer('overview_steps', args.ov_step, 'Overview period')
+flags.DEFINE_integer('evaluation_steps', args.ev_step, 'Overview period')
 
 def fill_feed_dict(batch, train_phase=True):
     """Fills the feed_dict for training the given step.
@@ -88,6 +94,11 @@ def do_eval(sess,
     return precision, avg_loss
 
 def run_training(extra_opts={}):
+    training_loss_total = []
+    training_accuracy_total = []
+    valid_loss_total = []
+    valid_accuracy_total = []
+    train_time_total = []
     start = datetime.datetime.now()
     start_str = start.strftime('%d-%m-%Y_%H_%M')
     train, validation = input_data.read_data_sets()
@@ -181,6 +192,13 @@ def run_training(extra_opts={}):
                 res_file.write('Iterations: ' + str(step) + '\n')
                 now = datetime.datetime.now()
                 delta = now - start
+                
+                                training_loss_total.append(obj_t)
+                training_accuracy_total.append(precision_t)
+                valid_loss_total.append(obj_v)
+                valid_accuracy_total.append(precision_v)
+                train_time_total.append(delta.total_seconds() / 60.0)
+                
                 res_file.write('Learning time: {0:.2f} minutes\n'.format(delta.total_seconds() / 60.0))
                 res_file.write('Train precision: {0:.5f}\n'.format(precision_t))
                 res_file.write('Train loss: {0:.5f}\n'.format(obj_t))
@@ -192,6 +210,12 @@ def run_training(extra_opts={}):
                 shutil.copyfileobj(net_file, res_file)
                 net_file.close()
                 res_file.close()
+                
+        np.save('t_loss_'+str(args.name), training_loss_total)
+        np.save('t_acc_'+str(args.name), training_accuracy_total)
+        np.save('v_loss_'+str(args.name), valid_loss_total)
+        np.save('v_acc_'+str(args.name), valid_accuracy_total)
+        np.save('time_'+str(args.name), train_time_total)
 
 def main(_):
     run_training()
