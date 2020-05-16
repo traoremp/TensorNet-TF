@@ -8,8 +8,7 @@ parser.add_argument('--over_step', '-os', type=int, default = '20', help='overvi
 args = parser.parse_args()
 
 
-samples = str.split(args.tests, ',')
-tests = '666,666'
+tests = str.split(args.tests, ',')
 os = args.over_step
 samples = str.split(tests, ',')
 samples = [int(i) for i in samples]
