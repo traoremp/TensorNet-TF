@@ -1,0 +1,690 @@
+Training Data Eval:
+  Num examples: 60000  Num correct: 51085  Precision @ 1: 0.8514  Loss: 0.53
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8633  Precision @ 1: 0.8633  Loss: 0.50
+Step 11100: loss = 0.93 (0.165 sec) [604.74 data/s]
+Step 11200: loss = 0.92 (0.143 sec) [701.35 data/s]
+Step 11300: loss = 0.98 (0.153 sec) [651.88 data/s]
+Step 11400: loss = 0.60 (0.163 sec) [612.68 data/s]
+Step 11500: loss = 0.70 (0.158 sec) [631.15 data/s]
+Step 11600: loss = 0.62 (0.156 sec) [640.80 data/s]
+Step 11700: loss = 0.91 (0.164 sec) [609.08 data/s]
+Step 11800: loss = 0.76 (0.157 sec) [638.03 data/s]
+Step 11900: loss = 0.74 (0.155 sec) [647.17 data/s]
+Step 12000: loss = 0.60 (0.179 sec) [558.01 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 50935  Precision @ 1: 0.8489  Loss: 0.54
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8593  Precision @ 1: 0.8593  Loss: 0.51
+Step 12100: loss = 1.09 (0.172 sec) [580.83 data/s]
+Step 12200: loss = 0.81 (0.176 sec) [567.73 data/s]
+Step 12300: loss = 0.68 (0.165 sec) [607.50 data/s]
+Step 12400: loss = 0.73 (0.176 sec) [567.59 data/s]
+Step 12500: loss = 0.90 (0.175 sec) [571.28 data/s]
+Step 12600: loss = 0.88 (0.169 sec) [593.25 data/s]
+Step 12700: loss = 0.66 (0.184 sec) [542.37 data/s]
+Step 12800: loss = 0.74 (0.169 sec) [592.20 data/s]
+Step 12900: loss = 0.90 (0.178 sec) [561.59 data/s]
+Step 13000: loss = 0.83 (0.166 sec) [603.30 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 51253  Precision @ 1: 0.8542  Loss: 0.52
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8603  Precision @ 1: 0.8603  Loss: 0.49
+Step 13100: loss = 0.69 (0.155 sec) [645.01 data/s]
+Step 13200: loss = 0.91 (0.163 sec) [612.23 data/s]
+Step 13300: loss = 0.68 (0.154 sec) [650.41 data/s]
+Step 13400: loss = 0.86 (0.174 sec) [574.77 data/s]
+Step 13500: loss = 0.51 (0.172 sec) [581.25 data/s]
+Step 13600: loss = 0.84 (0.156 sec) [643.07 data/s]
+Step 13700: loss = 0.66 (0.162 sec) [619.03 data/s]
+Step 13800: loss = 0.58 (0.163 sec) [613.82 data/s]
+Step 13900: loss = 0.69 (0.165 sec) [607.62 data/s]
+Step 14000: loss = 0.61 (0.173 sec) [578.42 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 50667  Precision @ 1: 0.8445  Loss: 0.57
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8503  Precision @ 1: 0.8503  Loss: 0.54
+Step 14100: loss = 0.74 (0.170 sec) [587.81 data/s]
+Step 14200: loss = 0.57 (0.162 sec) [615.70 data/s]
+Step 14300: loss = 0.51 (0.178 sec) [561.46 data/s]
+Step 14400: loss = 0.73 (0.198 sec) [504.08 data/s]
+Step 14500: loss = 0.58 (0.160 sec) [625.15 data/s]
+Step 14600: loss = 0.73 (0.169 sec) [590.45 data/s]
+Step 14700: loss = 0.71 (0.194 sec) [514.20 data/s]
+Step 14800: loss = 1.01 (0.175 sec) [571.83 data/s]
+Step 14900: loss = 1.04 (0.162 sec) [615.82 data/s]
+Step 15000: loss = 0.77 (0.153 sec) [653.26 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 51700  Precision @ 1: 0.8617  Loss: 0.49
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8689  Precision @ 1: 0.8689  Loss: 0.46
+Step 15100: loss = 0.70 (0.171 sec) [584.30 data/s]
+Step 15200: loss = 0.73 (0.174 sec) [574.41 data/s]
+Step 15300: loss = 0.78 (0.176 sec) [568.54 data/s]
+Step 15400: loss = 0.69 (0.178 sec) [563.36 data/s]
+Step 15500: loss = 0.74 (0.165 sec) [606.66 data/s]
+Step 15600: loss = 0.67 (0.164 sec) [608.14 data/s]
+Step 15700: loss = 0.82 (0.169 sec) [591.78 data/s]
+Step 15800: loss = 0.83 (0.153 sec) [651.87 data/s]
+Step 15900: loss = 0.75 (0.169 sec) [590.72 data/s]
+Step 16000: loss = 0.68 (0.141 sec) [707.09 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 51201  Precision @ 1: 0.8534  Loss: 0.52
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8623  Precision @ 1: 0.8623  Loss: 0.48
+Step 16100: loss = 0.79 (0.143 sec) [700.90 data/s]
+Step 16200: loss = 0.72 (0.145 sec) [688.84 data/s]
+Step 16300: loss = 0.87 (0.169 sec) [592.55 data/s]
+Step 16400: loss = 0.77 (0.159 sec) [627.11 data/s]
+Step 16500: loss = 0.71 (0.146 sec) [684.88 data/s]
+Step 16600: loss = 0.88 (0.151 sec) [663.38 data/s]
+Step 16700: loss = 0.80 (0.142 sec) [704.63 data/s]
+Step 16800: loss = 0.86 (0.153 sec) [652.42 data/s]
+Step 16900: loss = 0.83 (0.150 sec) [667.07 data/s]
+Step 17000: loss = 0.71 (0.159 sec) [628.98 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 51327  Precision @ 1: 0.8555  Loss: 0.51
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8609  Precision @ 1: 0.8609  Loss: 0.47
+Step 17100: loss = 0.63 (0.171 sec) [583.38 data/s]
+Step 17200: loss = 0.73 (0.155 sec) [645.56 data/s]
+Step 17300: loss = 0.88 (0.169 sec) [592.23 data/s]
+Step 17400: loss = 0.69 (0.152 sec) [657.44 data/s]
+Step 17500: loss = 0.67 (0.168 sec) [595.21 data/s]
+Step 17600: loss = 0.63 (0.161 sec) [620.25 data/s]
+Step 17700: loss = 0.69 (0.173 sec) [576.66 data/s]
+Step 17800: loss = 0.70 (0.160 sec) [624.43 data/s]
+Step 17900: loss = 0.69 (0.165 sec) [606.52 data/s]
+Step 18000: loss = 0.47 (0.164 sec) [608.41 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 51397  Precision @ 1: 0.8566  Loss: 0.51
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8653  Precision @ 1: 0.8653  Loss: 0.48
+Step 18100: loss = 0.63 (0.200 sec) [500.11 data/s]
+Step 18200: loss = 0.60 (0.181 sec) [552.78 data/s]
+Step 18300: loss = 0.87 (0.172 sec) [580.86 data/s]
+Step 18400: loss = 0.72 (0.184 sec) [542.25 data/s]
+Step 18500: loss = 1.10 (0.171 sec) [583.81 data/s]
+Step 18600: loss = 0.75 (0.166 sec) [603.95 data/s]
+Step 18700: loss = 0.72 (0.175 sec) [572.59 data/s]
+Step 18800: loss = 0.79 (0.162 sec) [615.85 data/s]
+Step 18900: loss = 0.59 (0.159 sec) [629.38 data/s]
+Step 19000: loss = 0.74 (0.165 sec) [605.45 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 51619  Precision @ 1: 0.8603  Loss: 0.49
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8679  Precision @ 1: 0.8679  Loss: 0.46
+Step 19100: loss = 0.73 (0.171 sec) [585.65 data/s]
+Step 19200: loss = 0.66 (0.171 sec) [585.81 data/s]
+Step 19300: loss = 0.79 (0.179 sec) [557.81 data/s]
+Step 19400: loss = 0.82 (0.159 sec) [627.28 data/s]
+Step 19500: loss = 0.61 (0.150 sec) [666.47 data/s]
+Step 19600: loss = 0.72 (0.164 sec) [611.47 data/s]
+Step 19700: loss = 0.74 (0.163 sec) [611.71 data/s]
+Step 19800: loss = 0.71 (0.159 sec) [629.01 data/s]
+Step 19900: loss = 0.50 (0.160 sec) [626.61 data/s]
+Step 20000: loss = 0.66 (0.165 sec) [607.56 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 50975  Precision @ 1: 0.8496  Loss: 0.52
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8556  Precision @ 1: 0.8556  Loss: 0.49
+Step 20100: loss = 0.61 (0.145 sec) [687.99 data/s]
+Step 20200: loss = 0.80 (0.149 sec) [672.22 data/s]
+Step 20300: loss = 0.72 (0.142 sec) [701.79 data/s]
+Step 20400: loss = 0.75 (0.145 sec) [691.04 data/s]
+Step 20500: loss = 0.66 (0.149 sec) [672.84 data/s]
+Step 20600: loss = 0.83 (0.147 sec) [681.36 data/s]
+Step 20700: loss = 0.55 (0.157 sec) [636.52 data/s]
+Step 20800: loss = 0.81 (0.161 sec) [623.03 data/s]
+Step 20900: loss = 0.80 (0.159 sec) [630.44 data/s]
+Step 21000: loss = 0.63 (0.195 sec) [511.83 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 51270  Precision @ 1: 0.8545  Loss: 0.50
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8645  Precision @ 1: 0.8645  Loss: 0.47
+Step 21100: loss = 0.60 (0.145 sec) [691.07 data/s]
+Step 21200: loss = 0.65 (0.152 sec) [656.01 data/s]
+Step 21300: loss = 0.65 (0.147 sec) [681.42 data/s]
+Step 21400: loss = 0.64 (0.161 sec) [619.75 data/s]
+Step 21500: loss = 0.40 (0.172 sec) [580.06 data/s]
+Step 21600: loss = 0.90 (0.158 sec) [631.08 data/s]
+Step 21700: loss = 0.82 (0.142 sec) [702.27 data/s]
+Step 21800: loss = 0.80 (0.150 sec) [664.92 data/s]
+Step 21900: loss = 0.91 (0.149 sec) [671.69 data/s]
+Step 22000: loss = 0.61 (0.159 sec) [627.33 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 51901  Precision @ 1: 0.8650  Loss: 0.47
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8695  Precision @ 1: 0.8695  Loss: 0.45
+Step 22100: loss = 0.48 (0.143 sec) [697.08 data/s]
+Step 22200: loss = 0.65 (0.158 sec) [634.90 data/s]
+Step 22300: loss = 0.70 (0.163 sec) [614.50 data/s]
+Step 22400: loss = 0.51 (0.144 sec) [696.56 data/s]
+Step 22500: loss = 0.53 (0.152 sec) [657.68 data/s]
+Step 22600: loss = 0.97 (0.160 sec) [626.90 data/s]
+Step 22700: loss = 0.70 (0.169 sec) [591.47 data/s]
+Step 22800: loss = 0.73 (0.156 sec) [640.22 data/s]
+Step 22900: loss = 0.55 (0.142 sec) [702.84 data/s]
+Step 23000: loss = 0.73 (0.156 sec) [642.00 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 51747  Precision @ 1: 0.8625  Loss: 0.48
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8696  Precision @ 1: 0.8696  Loss: 0.45
+Step 23100: loss = 0.78 (0.162 sec) [617.60 data/s]
+Step 23200: loss = 0.69 (0.148 sec) [675.91 data/s]
+Step 23300: loss = 0.68 (0.164 sec) [607.97 data/s]
+Step 23400: loss = 0.50 (0.152 sec) [659.21 data/s]
+Step 23500: loss = 0.48 (0.145 sec) [688.99 data/s]
+Step 23600: loss = 0.42 (0.158 sec) [632.67 data/s]
+Step 23700: loss = 0.55 (0.148 sec) [677.27 data/s]
+Step 23800: loss = 0.69 (0.162 sec) [618.43 data/s]
+Step 23900: loss = 0.64 (0.147 sec) [681.59 data/s]
+Step 24000: loss = 0.62 (0.154 sec) [650.74 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 51280  Precision @ 1: 0.8547  Loss: 0.50
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8622  Precision @ 1: 0.8622  Loss: 0.49
+Step 24100: loss = 0.79 (0.168 sec) [596.66 data/s]
+Step 24200: loss = 0.70 (0.146 sec) [687.00 data/s]
+Step 24300: loss = 0.61 (0.152 sec) [658.79 data/s]
+Step 24400: loss = 0.68 (0.154 sec) [651.40 data/s]
+Step 24500: loss = 0.76 (0.168 sec) [594.20 data/s]
+Step 24600: loss = 0.66 (0.157 sec) [635.18 data/s]
+Step 24700: loss = 0.54 (0.152 sec) [657.58 data/s]
+Step 24800: loss = 0.62 (0.153 sec) [654.56 data/s]
+Step 24900: loss = 0.88 (0.150 sec) [667.66 data/s]
+Step 25000: loss = 0.81 (0.175 sec) [571.24 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 52162  Precision @ 1: 0.8694  Loss: 0.46
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8746  Precision @ 1: 0.8746  Loss: 0.44
+Step 25100: loss = 0.61 (0.159 sec) [628.49 data/s]
+Step 25200: loss = 0.62 (0.148 sec) [677.82 data/s]
+Step 25300: loss = 0.56 (0.158 sec) [631.54 data/s]
+Step 25400: loss = 0.75 (0.143 sec) [698.51 data/s]
+Step 25500: loss = 0.57 (0.161 sec) [622.14 data/s]
+Step 25600: loss = 0.45 (0.166 sec) [601.26 data/s]
+Step 25700: loss = 0.71 (0.163 sec) [615.28 data/s]
+Step 25800: loss = 0.92 (0.150 sec) [666.49 data/s]
+Step 25900: loss = 0.47 (0.149 sec) [669.90 data/s]
+Step 26000: loss = 0.66 (0.153 sec) [655.09 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 51843  Precision @ 1: 0.8640  Loss: 0.47
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8699  Precision @ 1: 0.8699  Loss: 0.45
+Step 26100: loss = 0.63 (0.152 sec) [659.01 data/s]
+Step 26200: loss = 0.70 (0.154 sec) [651.00 data/s]
+Step 26300: loss = 0.60 (0.153 sec) [652.18 data/s]
+Step 26400: loss = 0.64 (0.162 sec) [618.69 data/s]
+Step 26500: loss = 0.55 (0.156 sec) [641.09 data/s]
+Step 26600: loss = 0.88 (0.155 sec) [644.18 data/s]
+Step 26700: loss = 0.55 (0.151 sec) [661.43 data/s]
+Step 26800: loss = 0.71 (0.151 sec) [661.39 data/s]
+Step 26900: loss = 0.62 (0.141 sec) [709.35 data/s]
+Step 27000: loss = 0.54 (0.150 sec) [667.73 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 51835  Precision @ 1: 0.8639  Loss: 0.48
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8731  Precision @ 1: 0.8731  Loss: 0.44
+Step 27100: loss = 0.53 (0.163 sec) [611.81 data/s]
+Step 27200: loss = 0.62 (0.149 sec) [671.99 data/s]
+Step 27300: loss = 0.90 (0.149 sec) [670.53 data/s]
+Step 27400: loss = 0.38 (0.145 sec) [690.41 data/s]
+Step 27500: loss = 0.69 (0.146 sec) [684.56 data/s]
+Step 27600: loss = 0.62 (0.146 sec) [684.13 data/s]
+Step 27700: loss = 0.52 (0.159 sec) [630.88 data/s]
+Step 27800: loss = 0.75 (0.146 sec) [685.75 data/s]
+Step 27900: loss = 0.68 (0.152 sec) [659.73 data/s]
+Step 28000: loss = 0.62 (0.161 sec) [622.08 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 51984  Precision @ 1: 0.8664  Loss: 0.46
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8746  Precision @ 1: 0.8746  Loss: 0.42
+Step 28100: loss = 0.69 (0.142 sec) [703.61 data/s]
+Step 28200: loss = 0.79 (0.168 sec) [595.10 data/s]
+Step 28300: loss = 0.63 (0.151 sec) [663.59 data/s]
+Step 28400: loss = 0.62 (0.145 sec) [687.54 data/s]
+Step 28500: loss = 0.54 (0.144 sec) [695.74 data/s]
+Step 28600: loss = 0.42 (0.158 sec) [631.69 data/s]
+Step 28700: loss = 0.62 (0.161 sec) [620.95 data/s]
+Step 28800: loss = 0.65 (0.165 sec) [607.19 data/s]
+Step 28900: loss = 0.65 (0.147 sec) [681.07 data/s]
+Step 29000: loss = 0.52 (0.152 sec) [658.90 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 51410  Precision @ 1: 0.8568  Loss: 0.48
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8663  Precision @ 1: 0.8663  Loss: 0.45
+Step 29100: loss = 0.64 (0.144 sec) [696.53 data/s]
+Step 29200: loss = 0.39 (0.157 sec) [636.42 data/s]
+Step 29300: loss = 0.68 (0.161 sec) [620.60 data/s]
+Step 29400: loss = 0.71 (0.142 sec) [705.30 data/s]
+Step 29500: loss = 0.50 (0.142 sec) [702.27 data/s]
+Step 29600: loss = 0.69 (0.151 sec) [660.25 data/s]
+Step 29700: loss = 0.87 (0.145 sec) [687.84 data/s]
+Step 29800: loss = 0.66 (0.147 sec) [681.23 data/s]
+Step 29900: loss = 0.69 (0.150 sec) [668.29 data/s]
+Step 30000: loss = 0.49 (0.149 sec) [669.34 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 52182  Precision @ 1: 0.8697  Loss: 0.46
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8770  Precision @ 1: 0.8770  Loss: 0.43
+Step 30100: loss = 0.41 (0.144 sec) [693.20 data/s]
+Step 30200: loss = 0.49 (0.140 sec) [712.84 data/s]
+Step 30300: loss = 0.46 (0.147 sec) [680.37 data/s]
+Step 30400: loss = 0.58 (0.151 sec) [664.30 data/s]
+Step 30500: loss = 0.69 (0.150 sec) [665.29 data/s]
+Step 30600: loss = 0.73 (0.155 sec) [645.03 data/s]
+Step 30700: loss = 0.83 (0.153 sec) [653.86 data/s]
+Step 30800: loss = 0.46 (0.149 sec) [671.01 data/s]
+Step 30900: loss = 0.67 (0.156 sec) [642.57 data/s]
+Step 31000: loss = 0.61 (0.143 sec) [698.30 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 52384  Precision @ 1: 0.8731  Loss: 0.45
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8799  Precision @ 1: 0.8799  Loss: 0.43
+Step 31100: loss = 0.57 (0.151 sec) [661.16 data/s]
+Step 31200: loss = 0.68 (0.154 sec) [648.11 data/s]
+Step 31300: loss = 0.53 (0.145 sec) [690.77 data/s]
+Step 31400: loss = 0.48 (0.159 sec) [630.71 data/s]
+Step 31500: loss = 0.61 (0.139 sec) [721.94 data/s]
+Step 31600: loss = 0.59 (0.148 sec) [675.78 data/s]
+Step 31700: loss = 0.56 (0.147 sec) [680.53 data/s]
+Step 31800: loss = 0.69 (0.146 sec) [683.41 data/s]
+Step 31900: loss = 0.55 (0.151 sec) [663.81 data/s]
+Step 32000: loss = 0.64 (0.145 sec) [690.16 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 51725  Precision @ 1: 0.8621  Loss: 0.47
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8756  Precision @ 1: 0.8756  Loss: 0.43
+Step 32100: loss = 0.57 (0.146 sec) [685.66 data/s]
+Step 32200: loss = 0.69 (0.154 sec) [650.42 data/s]
+Step 32300: loss = 0.54 (0.148 sec) [677.31 data/s]
+Step 32400: loss = 0.51 (0.151 sec) [664.43 data/s]
+Step 32500: loss = 0.78 (0.158 sec) [634.05 data/s]
+Step 32600: loss = 0.66 (0.146 sec) [686.04 data/s]
+Step 32700: loss = 0.57 (0.150 sec) [665.22 data/s]
+Step 32800: loss = 0.55 (0.146 sec) [682.83 data/s]
+Step 32900: loss = 0.67 (0.157 sec) [637.03 data/s]
+Step 33000: loss = 0.66 (0.164 sec) [609.72 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 51808  Precision @ 1: 0.8635  Loss: 0.47
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8711  Precision @ 1: 0.8711  Loss: 0.45
+Step 33100: loss = 0.60 (0.154 sec) [648.76 data/s]
+Step 33200: loss = 0.57 (0.136 sec) [732.65 data/s]
+Step 33300: loss = 0.54 (0.151 sec) [663.37 data/s]
+Step 33400: loss = 0.64 (0.152 sec) [656.13 data/s]
+Step 33500: loss = 0.68 (0.147 sec) [681.04 data/s]
+Step 33600: loss = 0.69 (0.151 sec) [662.60 data/s]
+Step 33700: loss = 0.50 (0.158 sec) [633.06 data/s]
+Step 33800: loss = 0.44 (0.161 sec) [619.42 data/s]
+Step 33900: loss = 0.56 (0.151 sec) [660.81 data/s]
+Step 34000: loss = 0.54 (0.139 sec) [721.07 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 51955  Precision @ 1: 0.8659  Loss: 0.47
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8739  Precision @ 1: 0.8739  Loss: 0.44
+Step 34100: loss = 0.49 (0.157 sec) [636.17 data/s]
+Step 34200: loss = 0.65 (0.143 sec) [701.48 data/s]
+Step 34300: loss = 0.72 (0.154 sec) [650.22 data/s]
+Step 34400: loss = 0.61 (0.145 sec) [690.52 data/s]
+Step 34500: loss = 0.48 (0.151 sec) [662.98 data/s]
+Step 34600: loss = 0.45 (0.171 sec) [585.07 data/s]
+Step 34700: loss = 0.60 (0.147 sec) [681.38 data/s]
+Step 34800: loss = 0.69 (0.151 sec) [662.20 data/s]
+Step 34900: loss = 0.50 (0.141 sec) [710.43 data/s]
+Step 35000: loss = 0.68 (0.153 sec) [653.84 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 52479  Precision @ 1: 0.8747  Loss: 0.45
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8788  Precision @ 1: 0.8788  Loss: 0.43
+Step 35100: loss = 0.48 (0.158 sec) [631.86 data/s]
+Step 35200: loss = 0.46 (0.141 sec) [708.06 data/s]
+Step 35300: loss = 0.68 (0.148 sec) [674.85 data/s]
+Step 35400: loss = 0.65 (0.138 sec) [727.09 data/s]
+Step 35500: loss = 0.59 (0.160 sec) [623.75 data/s]
+Step 35600: loss = 0.70 (0.139 sec) [718.13 data/s]
+Step 35700: loss = 0.48 (0.150 sec) [666.50 data/s]
+Step 35800: loss = 0.70 (0.147 sec) [679.86 data/s]
+Step 35900: loss = 0.66 (0.150 sec) [666.80 data/s]
+Step 36000: loss = 0.65 (0.156 sec) [639.64 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 52355  Precision @ 1: 0.8726  Loss: 0.44
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8812  Precision @ 1: 0.8812  Loss: 0.41
+Step 36100: loss = 0.52 (0.154 sec) [647.37 data/s]
+Step 36200: loss = 0.56 (0.167 sec) [600.42 data/s]
+Step 36300: loss = 0.53 (0.158 sec) [634.63 data/s]
+Step 36400: loss = 0.62 (0.159 sec) [627.61 data/s]
+Step 36500: loss = 0.88 (0.144 sec) [695.86 data/s]
+Step 36600: loss = 0.45 (0.143 sec) [698.02 data/s]
+Step 36700: loss = 0.51 (0.159 sec) [627.21 data/s]
+Step 36800: loss = 0.41 (0.163 sec) [612.94 data/s]
+Step 36900: loss = 0.47 (0.152 sec) [657.64 data/s]
+Step 37000: loss = 0.66 (0.163 sec) [612.60 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 52676  Precision @ 1: 0.8779  Loss: 0.42
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8817  Precision @ 1: 0.8817  Loss: 0.41
+Step 37100: loss = 0.45 (0.154 sec) [648.61 data/s]
+Step 37200: loss = 0.74 (0.149 sec) [672.68 data/s]
+Step 37300: loss = 0.49 (0.147 sec) [678.26 data/s]
+Step 37400: loss = 0.71 (0.153 sec) [654.85 data/s]
+Step 37500: loss = 0.47 (0.149 sec) [669.32 data/s]
+Step 37600: loss = 0.58 (0.144 sec) [695.45 data/s]
+Step 37700: loss = 0.32 (0.147 sec) [680.85 data/s]
+Step 37800: loss = 0.50 (0.152 sec) [659.22 data/s]
+Step 37900: loss = 0.56 (0.147 sec) [680.52 data/s]
+Step 38000: loss = 0.50 (0.148 sec) [673.45 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 52256  Precision @ 1: 0.8709  Loss: 0.43
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8786  Precision @ 1: 0.8786  Loss: 0.41
+Step 38100: loss = 0.50 (0.155 sec) [643.77 data/s]
+Step 38200: loss = 0.82 (0.158 sec) [631.31 data/s]
+Step 38300: loss = 0.66 (0.159 sec) [629.61 data/s]
+Step 38400: loss = 0.62 (0.152 sec) [659.15 data/s]
+Step 38500: loss = 0.60 (0.141 sec) [711.53 data/s]
+Step 38600: loss = 0.72 (0.149 sec) [671.53 data/s]
+Step 38700: loss = 0.61 (0.159 sec) [629.65 data/s]
+Step 38800: loss = 0.54 (0.147 sec) [678.21 data/s]
+Step 38900: loss = 0.57 (0.146 sec) [684.41 data/s]
+Step 39000: loss = 0.49 (0.148 sec) [677.66 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 52409  Precision @ 1: 0.8735  Loss: 0.44
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8817  Precision @ 1: 0.8817  Loss: 0.41
+Step 39100: loss = 0.63 (0.153 sec) [653.81 data/s]
+Step 39200: loss = 0.43 (0.153 sec) [652.65 data/s]
+Step 39300: loss = 0.62 (0.174 sec) [575.06 data/s]
+Step 39400: loss = 0.63 (0.148 sec) [674.70 data/s]
+Step 39500: loss = 0.45 (0.149 sec) [669.13 data/s]
+Step 39600: loss = 0.64 (0.149 sec) [670.77 data/s]
+Step 39700: loss = 0.68 (0.160 sec) [624.10 data/s]
+Step 39800: loss = 0.39 (0.151 sec) [662.28 data/s]
+Step 39900: loss = 0.60 (0.152 sec) [657.38 data/s]
+Step 40000: loss = 0.73 (0.147 sec) [681.18 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 52655  Precision @ 1: 0.8776  Loss: 0.42
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8862  Precision @ 1: 0.8862  Loss: 0.39
+Step 40100: loss = 0.68 (0.139 sec) [719.95 data/s]
+Step 40200: loss = 0.61 (0.147 sec) [682.24 data/s]
+Step 40300: loss = 0.69 (0.144 sec) [695.66 data/s]
+Step 40400: loss = 0.43 (0.153 sec) [654.85 data/s]
+Step 40500: loss = 0.48 (0.151 sec) [663.65 data/s]
+Step 40600: loss = 0.79 (0.151 sec) [660.61 data/s]
+Step 40700: loss = 0.55 (0.159 sec) [628.61 data/s]
+Step 40800: loss = 0.53 (0.149 sec) [670.07 data/s]
+Step 40900: loss = 0.54 (0.151 sec) [660.85 data/s]
+Step 41000: loss = 0.71 (0.139 sec) [719.47 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 51890  Precision @ 1: 0.8648  Loss: 0.46
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8681  Precision @ 1: 0.8681  Loss: 0.44
+Step 41100: loss = 0.48 (0.192 sec) [519.66 data/s]
+Step 41200: loss = 0.64 (0.153 sec) [651.81 data/s]
+Step 41300: loss = 0.43 (0.153 sec) [653.98 data/s]
+Step 41400: loss = 0.80 (0.144 sec) [694.79 data/s]
+Step 41500: loss = 0.51 (0.170 sec) [588.36 data/s]
+Step 41600: loss = 0.54 (0.142 sec) [705.16 data/s]
+Step 41700: loss = 0.59 (0.163 sec) [612.83 data/s]
+Step 41800: loss = 0.44 (0.148 sec) [675.18 data/s]
+Step 41900: loss = 0.58 (0.137 sec) [731.09 data/s]
+Step 42000: loss = 0.52 (0.143 sec) [697.42 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 52574  Precision @ 1: 0.8762  Loss: 0.43
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8801  Precision @ 1: 0.8801  Loss: 0.40
+Step 42100: loss = 0.50 (0.154 sec) [649.75 data/s]
+Step 42200: loss = 0.46 (0.149 sec) [672.19 data/s]
+Step 42300: loss = 0.82 (0.141 sec) [711.43 data/s]
+Step 42400: loss = 0.70 (0.146 sec) [684.72 data/s]
+Step 42500: loss = 0.41 (0.151 sec) [663.58 data/s]
+Step 42600: loss = 0.53 (0.154 sec) [650.85 data/s]
+Step 42700: loss = 0.69 (0.153 sec) [655.26 data/s]
+Step 42800: loss = 0.63 (0.153 sec) [653.11 data/s]
+Step 42900: loss = 0.42 (0.161 sec) [621.52 data/s]
+Step 43000: loss = 0.66 (0.141 sec) [709.99 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 52334  Precision @ 1: 0.8722  Loss: 0.45
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8815  Precision @ 1: 0.8815  Loss: 0.43
+Step 43100: loss = 0.69 (0.157 sec) [638.64 data/s]
+Step 43200: loss = 0.49 (0.162 sec) [615.53 data/s]
+Step 43300: loss = 0.53 (0.156 sec) [643.05 data/s]
+Step 43400: loss = 0.51 (0.164 sec) [608.96 data/s]
+Step 43500: loss = 0.53 (0.167 sec) [598.80 data/s]
+Step 43600: loss = 0.41 (0.163 sec) [613.58 data/s]
+Step 43700: loss = 0.47 (0.146 sec) [685.56 data/s]
+Step 43800: loss = 0.69 (0.153 sec) [655.51 data/s]
+Step 43900: loss = 0.60 (0.145 sec) [690.55 data/s]
+Step 44000: loss = 0.58 (0.151 sec) [664.00 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 52785  Precision @ 1: 0.8798  Loss: 0.42
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8879  Precision @ 1: 0.8879  Loss: 0.40
+Step 44100: loss = 0.69 (0.146 sec) [684.17 data/s]
+Step 44200: loss = 0.55 (0.181 sec) [551.19 data/s]
+Step 44300: loss = 0.60 (0.146 sec) [682.72 data/s]
+Step 44400: loss = 0.53 (0.152 sec) [657.11 data/s]
+Step 44500: loss = 0.54 (0.147 sec) [679.85 data/s]
+Step 44600: loss = 0.44 (0.160 sec) [626.15 data/s]
+Step 44700: loss = 0.66 (0.147 sec) [680.27 data/s]
+Step 44800: loss = 0.47 (0.143 sec) [701.47 data/s]
+Step 44900: loss = 0.38 (0.146 sec) [685.69 data/s]
+Step 45000: loss = 0.55 (0.145 sec) [687.81 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 52655  Precision @ 1: 0.8776  Loss: 0.43
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8849  Precision @ 1: 0.8849  Loss: 0.41
+Step 45100: loss = 0.47 (0.146 sec) [682.79 data/s]
+Step 45200: loss = 0.60 (0.148 sec) [676.91 data/s]
+Step 45300: loss = 0.55 (0.144 sec) [696.40 data/s]
+Step 45400: loss = 0.35 (0.158 sec) [630.97 data/s]
+Step 45500: loss = 0.65 (0.139 sec) [717.50 data/s]
+Step 45600: loss = 0.60 (0.148 sec) [675.05 data/s]
+Step 45700: loss = 0.61 (0.141 sec) [708.47 data/s]
+Step 45800: loss = 0.46 (0.139 sec) [719.08 data/s]
+Step 45900: loss = 0.55 (0.149 sec) [669.42 data/s]
+Step 46000: loss = 0.52 (0.153 sec) [654.88 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 51678  Precision @ 1: 0.8613  Loss: 0.47
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8719  Precision @ 1: 0.8719  Loss: 0.44
+Step 46100: loss = 0.52 (0.154 sec) [649.85 data/s]
+Step 46200: loss = 0.44 (0.145 sec) [688.80 data/s]
+Step 46300: loss = 0.57 (0.147 sec) [681.28 data/s]
+Step 46400: loss = 0.50 (0.159 sec) [628.91 data/s]
+Step 46500: loss = 0.61 (0.161 sec) [619.89 data/s]
+Step 46600: loss = 0.43 (0.174 sec) [576.08 data/s]
+Step 46700: loss = 0.47 (0.147 sec) [680.34 data/s]
+Step 46800: loss = 0.45 (0.141 sec) [708.82 data/s]
+Step 46900: loss = 0.44 (0.157 sec) [638.69 data/s]
+Step 47000: loss = 0.63 (0.155 sec) [644.25 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 52478  Precision @ 1: 0.8746  Loss: 0.44
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8783  Precision @ 1: 0.8783  Loss: 0.42
+Step 47100: loss = 0.58 (0.136 sec) [735.04 data/s]
+Step 47200: loss = 0.56 (0.150 sec) [666.33 data/s]
+Step 47300: loss = 0.45 (0.140 sec) [712.24 data/s]
+Step 47400: loss = 0.70 (0.151 sec) [663.96 data/s]
+Step 47500: loss = 0.48 (0.162 sec) [618.70 data/s]
+Step 47600: loss = 0.41 (0.138 sec) [724.63 data/s]
+Step 47700: loss = 0.85 (0.147 sec) [680.28 data/s]
+Step 47800: loss = 0.70 (0.152 sec) [659.39 data/s]
+Step 47900: loss = 0.64 (0.143 sec) [700.15 data/s]
+Step 48000: loss = 0.35 (0.146 sec) [683.63 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 52843  Precision @ 1: 0.8807  Loss: 0.42
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8854  Precision @ 1: 0.8854  Loss: 0.41
+Step 48100: loss = 0.61 (0.138 sec) [723.57 data/s]
+Step 48200: loss = 0.71 (0.154 sec) [649.40 data/s]
+Step 48300: loss = 0.52 (0.148 sec) [675.94 data/s]
+Step 48400: loss = 0.60 (0.139 sec) [718.54 data/s]
+Step 48500: loss = 0.68 (0.147 sec) [680.12 data/s]
+Step 48600: loss = 0.75 (0.144 sec) [695.14 data/s]
+Step 48700: loss = 0.58 (0.139 sec) [718.06 data/s]
+Step 48800: loss = 0.44 (0.150 sec) [667.23 data/s]
+Step 48900: loss = 0.69 (0.141 sec) [708.32 data/s]
+Step 49000: loss = 0.56 (0.148 sec) [675.65 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 52070  Precision @ 1: 0.8678  Loss: 0.46
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8754  Precision @ 1: 0.8754  Loss: 0.43
+Step 49100: loss = 0.43 (0.144 sec) [696.69 data/s]
+Step 49200: loss = 0.74 (0.146 sec) [686.34 data/s]
+Step 49300: loss = 0.65 (0.164 sec) [608.16 data/s]
+Step 49400: loss = 0.42 (0.172 sec) [580.22 data/s]
+Step 49500: loss = 0.57 (0.141 sec) [707.66 data/s]
+Step 49600: loss = 0.59 (0.150 sec) [667.20 data/s]
+Step 49700: loss = 0.49 (0.148 sec) [674.00 data/s]
+Step 49800: loss = 0.55 (0.160 sec) [623.11 data/s]
+Step 49900: loss = 0.58 (0.145 sec) [687.80 data/s]
+Step 50000: loss = 0.62 (0.149 sec) [671.03 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 52802  Precision @ 1: 0.8800  Loss: 0.41
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8881  Precision @ 1: 0.8881  Loss: 0.40
+Step 50100: loss = 0.58 (0.166 sec) [603.91 data/s]
+Step 50200: loss = 0.65 (0.151 sec) [661.52 data/s]
+Step 50300: loss = 0.49 (0.148 sec) [675.81 data/s]
+Step 50400: loss = 0.83 (0.142 sec) [706.38 data/s]
+Step 50500: loss = 0.48 (0.151 sec) [660.78 data/s]
+Step 50600: loss = 0.68 (0.169 sec) [591.32 data/s]
+Step 50700: loss = 0.71 (0.165 sec) [605.43 data/s]
+Step 50800: loss = 0.60 (0.160 sec) [624.07 data/s]
+Step 50900: loss = 0.43 (0.151 sec) [660.15 data/s]
+Step 51000: loss = 0.51 (0.153 sec) [653.36 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 52640  Precision @ 1: 0.8773  Loss: 0.42
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8844  Precision @ 1: 0.8844  Loss: 0.41
+Step 51100: loss = 0.54 (0.159 sec) [629.16 data/s]
+Step 51200: loss = 0.71 (0.149 sec) [668.91 data/s]
+Step 51300: loss = 0.73 (0.151 sec) [661.45 data/s]
+Step 51400: loss = 0.44 (0.160 sec) [626.34 data/s]
+Step 51500: loss = 0.52 (0.150 sec) [667.52 data/s]
+Step 51600: loss = 0.72 (0.168 sec) [594.07 data/s]
+Step 51700: loss = 0.64 (0.156 sec) [639.21 data/s]
+Step 51800: loss = 0.65 (0.144 sec) [695.69 data/s]
+Step 51900: loss = 0.77 (0.140 sec) [712.87 data/s]
+Step 52000: loss = 0.60 (0.144 sec) [695.85 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 52436  Precision @ 1: 0.8739  Loss: 0.44
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8848  Precision @ 1: 0.8848  Loss: 0.41
+Step 52100: loss = 0.50 (0.154 sec) [648.47 data/s]
+Step 52200: loss = 0.57 (0.154 sec) [648.00 data/s]
+Step 52300: loss = 0.61 (0.149 sec) [671.62 data/s]
+Step 52400: loss = 0.64 (0.149 sec) [672.48 data/s]
+Step 52500: loss = 0.47 (0.150 sec) [668.63 data/s]
+Step 52600: loss = 0.63 (0.153 sec) [652.47 data/s]
+Step 52700: loss = 0.60 (0.167 sec) [599.73 data/s]
+Step 52800: loss = 0.63 (0.150 sec) [667.70 data/s]
+Step 52900: loss = 0.70 (0.146 sec) [686.81 data/s]
+Step 53000: loss = 0.76 (0.156 sec) [642.96 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 52319  Precision @ 1: 0.8720  Loss: 0.44
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8813  Precision @ 1: 0.8813  Loss: 0.42
+Step 53100: loss = 0.53 (0.154 sec) [650.01 data/s]
+Step 53200: loss = 0.49 (0.138 sec) [724.43 data/s]
+Step 53300: loss = 0.61 (0.143 sec) [700.36 data/s]
+Step 53400: loss = 0.39 (0.161 sec) [620.60 data/s]
+Step 53500: loss = 0.53 (0.146 sec) [683.07 data/s]
+Step 53600: loss = 0.38 (0.148 sec) [675.18 data/s]
+Step 53700: loss = 0.48 (0.143 sec) [698.61 data/s]
+Step 53800: loss = 0.70 (0.137 sec) [727.41 data/s]
+Step 53900: loss = 0.50 (0.151 sec) [663.93 data/s]
+Step 54000: loss = 0.63 (0.144 sec) [693.04 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 52600  Precision @ 1: 0.8767  Loss: 0.43
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8864  Precision @ 1: 0.8864  Loss: 0.40
+Step 54100: loss = 0.61 (0.145 sec) [687.79 data/s]
+Step 54200: loss = 0.58 (0.141 sec) [710.92 data/s]
+Step 54300: loss = 0.53 (0.159 sec) [627.08 data/s]
+Step 54400: loss = 0.56 (0.151 sec) [664.21 data/s]
+Step 54500: loss = 0.75 (0.152 sec) [658.71 data/s]
+Step 54600: loss = 0.62 (0.147 sec) [679.53 data/s]
+Step 54700: loss = 0.87 (0.161 sec) [621.94 data/s]
+Step 54800: loss = 0.41 (0.140 sec) [713.57 data/s]
+Step 54900: loss = 0.44 (0.160 sec) [626.58 data/s]
+Step 55000: loss = 0.73 (0.155 sec) [644.83 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 52522  Precision @ 1: 0.8754  Loss: 0.43
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8871  Precision @ 1: 0.8871  Loss: 0.39
+Step 55100: loss = 0.55 (0.144 sec) [693.16 data/s]
+Step 55200: loss = 0.55 (0.149 sec) [673.07 data/s]
+Step 55300: loss = 0.74 (0.153 sec) [654.01 data/s]
+Step 55400: loss = 0.45 (0.153 sec) [652.92 data/s]
+Step 55500: loss = 0.49 (0.156 sec) [639.53 data/s]
+Step 55600: loss = 0.45 (0.156 sec) [639.55 data/s]
+Step 55700: loss = 0.62 (0.155 sec) [645.11 data/s]
+Step 55800: loss = 0.57 (0.164 sec) [610.58 data/s]
+Step 55900: loss = 0.75 (0.147 sec) [681.15 data/s]
+Step 56000: loss = 0.55 (0.149 sec) [670.37 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 52581  Precision @ 1: 0.8763  Loss: 0.43
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8827  Precision @ 1: 0.8827  Loss: 0.41
+Step 56100: loss = 0.68 (0.154 sec) [650.73 data/s]
+Step 56200: loss = 0.68 (0.145 sec) [688.69 data/s]
+Step 56300: loss = 0.55 (0.153 sec) [651.47 data/s]
+Step 56400: loss = 0.41 (0.154 sec) [649.45 data/s]
+Step 56500: loss = 0.50 (0.146 sec) [686.93 data/s]
+Step 56600: loss = 0.70 (0.161 sec) [621.24 data/s]
+Step 56700: loss = 0.39 (0.158 sec) [633.50 data/s]
+Step 56800: loss = 0.61 (0.144 sec) [695.37 data/s]
+Step 56900: loss = 0.63 (0.164 sec) [610.61 data/s]
+Step 57000: loss = 0.47 (0.145 sec) [688.71 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 52251  Precision @ 1: 0.8709  Loss: 0.44
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8800  Precision @ 1: 0.8800  Loss: 0.42
+Step 57100: loss = 0.53 (0.144 sec) [695.36 data/s]
+Step 57200: loss = 0.64 (0.158 sec) [634.53 data/s]
+Step 57300: loss = 0.76 (0.145 sec) [689.37 data/s]
+Step 57400: loss = 0.57 (0.144 sec) [694.83 data/s]
+Step 57500: loss = 0.63 (0.149 sec) [670.33 data/s]
+Step 57600: loss = 0.54 (0.153 sec) [651.81 data/s]
+Step 57700: loss = 0.77 (0.172 sec) [581.30 data/s]
+Step 57800: loss = 0.41 (0.143 sec) [700.96 data/s]
+Step 57900: loss = 0.40 (0.152 sec) [655.93 data/s]
+Step 58000: loss = 0.40 (0.135 sec) [739.55 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 52696  Precision @ 1: 0.8783  Loss: 0.41
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8846  Precision @ 1: 0.8846  Loss: 0.40
+Step 58100: loss = 0.48 (0.158 sec) [634.29 data/s]
+Step 58200: loss = 0.74 (0.155 sec) [644.08 data/s]
+Step 58300: loss = 0.50 (0.153 sec) [651.48 data/s]
+Step 58400: loss = 0.46 (0.149 sec) [670.51 data/s]
+Step 58500: loss = 0.33 (0.147 sec) [682.15 data/s]
+Step 58600: loss = 0.41 (0.145 sec) [688.23 data/s]
+Step 58700: loss = 0.54 (0.143 sec) [699.86 data/s]
+Step 58800: loss = 0.59 (0.139 sec) [718.90 data/s]
+Step 58900: loss = 0.49 (0.149 sec) [670.36 data/s]
+Step 59000: loss = 0.62 (0.153 sec) [653.28 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 52322  Precision @ 1: 0.8720  Loss: 0.44
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8792  Precision @ 1: 0.8792  Loss: 0.42
+Step 59100: loss = 0.55 (0.151 sec) [664.20 data/s]
+Step 59200: loss = 0.56 (0.157 sec) [637.73 data/s]
+Step 59300: loss = 0.52 (0.156 sec) [641.80 data/s]
+Step 59400: loss = 0.45 (0.146 sec) [687.20 data/s]
+Step 59500: loss = 0.54 (0.144 sec) [693.06 data/s]
+Step 59600: loss = 0.67 (0.157 sec) [635.70 data/s]
+Step 59700: loss = 0.44 (0.146 sec) [684.33 data/s]
+Step 59800: loss = 0.65 (0.163 sec) [613.34 data/s]
+Step 59900: loss = 0.47 (0.171 sec) [583.84 data/s]
+Step 60000: loss = 0.66 (0.142 sec) [704.83 data/s]
+Training Data Eval:
+  Num examples: 60000  Num correct: 51963  Precision @ 1: 0.8660  Loss: 0.46
+Validation Data Eval:
+  Num examples: 10000  Num correct: 8730  Precision @ 1: 0.8730  Loss: 0.45

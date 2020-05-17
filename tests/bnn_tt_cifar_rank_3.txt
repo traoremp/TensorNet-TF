@@ -1,0 +1,648 @@
+WARNING:tensorflow:From /home/traoremp/.local/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py:1659: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+W0514 18:22:28.514217 140471921723200 deprecation.py:500] From /home/traoremp/.local/lib/python3.8/site-packages/tensorflow/python/ops/resource_variable_ops.py:1659: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+2020-05-14 18:22:28.645254: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-05-14 18:22:28.654250: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-14 18:22:28.655301: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: GeForce GTX 760 (192-bit) computeCapability: 3.0
+coreClock: 0.8885GHz coreCount: 6 deviceMemorySize: 1.45GiB deviceMemoryBandwidth: 125.17GiB/s
+2020-05-14 18:22:28.655496: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2020-05-14 18:22:28.656992: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-05-14 18:22:28.658444: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-05-14 18:22:28.658810: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-05-14 18:22:28.661081: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-05-14 18:22:28.662313: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-05-14 18:22:28.666270: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-05-14 18:22:28.666302: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1598] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+WARNING:tensorflow:From /home/traoremp/Documents/Cours/IFT6760A/project/TensorNet-TF/experiments/cifar-10/FC-Tensorizing-Neural-Networks/tt-layer_and_quantization/net.py:93: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+W0514 18:22:28.692301 140471921723200 deprecation.py:317] From /home/traoremp/Documents/Cours/IFT6760A/project/TensorNet-TF/experiments/cifar-10/FC-Tensorizing-Neural-Networks/tt-layer_and_quantization/net.py:93: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /home/traoremp/Documents/Cours/IFT6760A/project/TensorNet-TF/experiments/cifar-10/FC-Tensorizing-Neural-Networks/tt-layer_and_quantization/net.py:115: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+W0514 18:22:28.694079 140471921723200 deprecation.py:500] From /home/traoremp/Documents/Cours/IFT6760A/project/TensorNet-TF/experiments/cifar-10/FC-Tensorizing-Neural-Networks/tt-layer_and_quantization/net.py:115: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/traoremp/Documents/Cours/IFT6760A/project/TensorNet-TF/experiments/cifar-10/FC-Tensorizing-Neural-Networks/tt-layer_and_quantization/net.py:143: sparse_to_dense (from tensorflow.python.ops.sparse_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Create a `tf.sparse.SparseTensor` and use `tf.sparse.to_dense` instead.
+W0514 18:22:28.923310 140471921723200 deprecation.py:317] From /home/traoremp/Documents/Cours/IFT6760A/project/TensorNet-TF/experiments/cifar-10/FC-Tensorizing-Neural-Networks/tt-layer_and_quantization/net.py:143: sparse_to_dense (from tensorflow.python.ops.sparse_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Create a `tf.sparse.SparseTensor` and use `tf.sparse.to_dense` instead.
+WARNING:tensorflow:From /home/traoremp/Documents/Cours/IFT6760A/project/TensorNet-TF/experiments/cifar-10/FC-Tensorizing-Neural-Networks/tt-layer_and_quantization/net.py:147: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+W0514 18:22:28.924350 140471921723200 deprecation.py:317] From /home/traoremp/Documents/Cours/IFT6760A/project/TensorNet-TF/experiments/cifar-10/FC-Tensorizing-Neural-Networks/tt-layer_and_quantization/net.py:147: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+2020-05-14 18:22:29.457393: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-05-14 18:22:29.482984: I tensorflow/core/platform/profile_utils/cpu_utils.cc:102] CPU Frequency: 3492130000 Hz
+2020-05-14 18:22:29.483325: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7fc118000b60 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-05-14 18:22:29.483362: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-05-14 18:22:29.516257: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-14 18:22:29.516467: I tensorflow/compiler/xla/service/platform_util.cc:139] StreamExecutor cuda device (0) is of insufficient compute capability: 3.5 required, device is 3.0
+2020-05-14 18:22:29.516552: I tensorflow/compiler/jit/xla_gpu_device.cc:161] Ignoring visible XLA_GPU_JIT device. Device number is 0, reason: Internal: no supported devices found for platform CUDA
+2020-05-14 18:22:29.516711: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-14 18:22:29.516905: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: GeForce GTX 760 (192-bit) computeCapability: 3.0
+coreClock: 0.8885GHz coreCount: 6 deviceMemorySize: 1.45GiB deviceMemoryBandwidth: 125.17GiB/s
+2020-05-14 18:22:29.517103: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2020-05-14 18:22:29.517124: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-05-14 18:22:29.517145: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-05-14 18:22:29.517168: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-05-14 18:22:29.517190: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-05-14 18:22:29.517210: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-05-14 18:22:29.517235: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-05-14 18:22:29.517248: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1598] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2020-05-14 18:22:29.517266: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-05-14 18:22:29.517280: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2020-05-14 18:22:29.517291: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N 
+Step 100: loss = 2.89 (1.992 sec) [50.20 data/s]
+Step 200: loss = 2.79 (2.310 sec) [43.28 data/s]
+Step 300: loss = 2.48 (2.103 sec) [47.54 data/s]
+Step 400: loss = 2.80 (1.994 sec) [50.15 data/s]
+Step 500: loss = 2.73 (2.311 sec) [43.28 data/s]
+Step 600: loss = 2.28 (2.004 sec) [49.90 data/s]
+Step 700: loss = 2.36 (2.382 sec) [41.98 data/s]
+Step 800: loss = 2.28 (1.919 sec) [52.12 data/s]
+Step 900: loss = 2.17 (2.273 sec) [43.99 data/s]
+Step 1000: loss = 2.31 (2.020 sec) [49.51 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 16638  Precision @ 1: 0.3328  Loss: 1.99
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3219  Precision @ 1: 0.3219  Loss: 2.02
+Step 1100: loss = 2.00 (2.270 sec) [44.04 data/s]
+Step 1200: loss = 2.15 (1.945 sec) [51.42 data/s]
+Step 1300: loss = 2.06 (2.105 sec) [47.49 data/s]
+Step 1400: loss = 2.13 (2.221 sec) [45.02 data/s]
+Step 1500: loss = 2.07 (2.268 sec) [44.09 data/s]
+Step 1600: loss = 2.19 (2.045 sec) [48.90 data/s]
+Step 1700: loss = 2.02 (2.007 sec) [49.82 data/s]
+Step 1800: loss = 2.18 (2.057 sec) [48.61 data/s]
+Step 1900: loss = 2.03 (2.042 sec) [48.97 data/s]
+Step 2000: loss = 2.16 (2.110 sec) [47.38 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 17628  Precision @ 1: 0.3526  Loss: 1.91
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3437  Precision @ 1: 0.3437  Loss: 1.93
+Step 2100: loss = 2.05 (2.060 sec) [48.53 data/s]
+Step 2200: loss = 2.10 (2.004 sec) [49.91 data/s]
+Step 2300: loss = 2.11 (2.037 sec) [49.10 data/s]
+Step 2400: loss = 2.04 (2.272 sec) [44.01 data/s]
+Step 2500: loss = 1.87 (2.011 sec) [49.72 data/s]
+Step 2600: loss = 1.90 (2.018 sec) [49.57 data/s]
+Step 2700: loss = 2.01 (2.029 sec) [49.29 data/s]
+Step 2800: loss = 2.10 (2.287 sec) [43.72 data/s]
+Step 2900: loss = 2.04 (2.017 sec) [49.59 data/s]
+Step 3000: loss = 1.94 (1.968 sec) [50.81 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 17911  Precision @ 1: 0.3582  Loss: 1.88
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3590  Precision @ 1: 0.3590  Loss: 1.89
+Step 3100: loss = 2.04 (1.940 sec) [51.56 data/s]
+Step 3200: loss = 2.05 (2.245 sec) [44.55 data/s]
+Step 3300: loss = 2.07 (2.034 sec) [49.16 data/s]
+Step 3400: loss = 2.10 (1.989 sec) [50.27 data/s]
+Step 3500: loss = 1.89 (2.036 sec) [49.12 data/s]
+Step 3600: loss = 1.94 (2.065 sec) [48.43 data/s]
+Step 3700: loss = 2.06 (1.997 sec) [50.08 data/s]
+Step 3800: loss = 1.97 (2.313 sec) [43.23 data/s]
+Step 3900: loss = 1.87 (2.113 sec) [47.32 data/s]
+Step 4000: loss = 2.04 (2.423 sec) [41.27 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 17990  Precision @ 1: 0.3598  Loss: 1.88
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3600  Precision @ 1: 0.3600  Loss: 1.88
+Step 4100: loss = 2.00 (2.003 sec) [49.93 data/s]
+Step 4200: loss = 1.86 (2.098 sec) [47.66 data/s]
+Step 4300: loss = 2.00 (1.936 sec) [51.64 data/s]
+Step 4400: loss = 1.94 (2.025 sec) [49.39 data/s]
+Step 4500: loss = 1.93 (2.058 sec) [48.59 data/s]
+Step 4600: loss = 1.97 (1.997 sec) [50.08 data/s]
+Step 4700: loss = 2.12 (2.374 sec) [42.13 data/s]
+Step 4800: loss = 1.94 (1.983 sec) [50.43 data/s]
+Step 4900: loss = 1.91 (2.000 sec) [50.01 data/s]
+Step 5000: loss = 1.97 (2.111 sec) [47.36 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 18636  Precision @ 1: 0.3727  Loss: 1.83
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3639  Precision @ 1: 0.3639  Loss: 1.85
+Step 5100: loss = 2.10 (2.026 sec) [49.37 data/s]
+Step 5200: loss = 1.91 (1.952 sec) [51.22 data/s]
+Step 5300: loss = 1.97 (2.054 sec) [48.68 data/s]
+Step 5400: loss = 1.87 (2.371 sec) [42.17 data/s]
+Step 5500: loss = 1.94 (1.953 sec) [51.20 data/s]
+Step 5600: loss = 2.22 (2.068 sec) [48.37 data/s]
+Step 5700: loss = 2.01 (1.999 sec) [50.03 data/s]
+Step 5800: loss = 1.89 (2.386 sec) [41.92 data/s]
+Step 5900: loss = 1.95 (1.978 sec) [50.56 data/s]
+Step 6000: loss = 2.07 (2.039 sec) [49.04 data/s]
+WARNING:tensorflow:From /home/traoremp/.local/lib/python3.8/site-packages/tensorflow/python/training/saver.py:969: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+W0514 22:32:44.072681 140471921723200 deprecation.py:317] From /home/traoremp/.local/lib/python3.8/site-packages/tensorflow/python/training/saver.py:969: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+Training Data Eval:
+  Num examples: 50000  Num correct: 18959  Precision @ 1: 0.3792  Loss: 1.81
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3807  Precision @ 1: 0.3807  Loss: 1.82
+Step 6100: loss = 1.98 (2.010 sec) [49.75 data/s]
+Step 6200: loss = 1.97 (2.089 sec) [47.86 data/s]
+Step 6300: loss = 2.04 (1.982 sec) [50.45 data/s]
+Step 6400: loss = 2.02 (2.060 sec) [48.55 data/s]
+Step 6500: loss = 1.98 (1.989 sec) [50.28 data/s]
+Step 6600: loss = 2.04 (1.939 sec) [51.57 data/s]
+Step 6700: loss = 2.06 (1.976 sec) [50.61 data/s]
+Step 6800: loss = 1.82 (2.321 sec) [43.08 data/s]
+Step 6900: loss = 1.91 (1.910 sec) [52.35 data/s]
+Step 7000: loss = 1.93 (2.019 sec) [49.53 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 18988  Precision @ 1: 0.3798  Loss: 1.81
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3730  Precision @ 1: 0.3730  Loss: 1.83
+Step 7100: loss = 1.84 (2.019 sec) [49.54 data/s]
+Step 7200: loss = 1.92 (2.169 sec) [46.11 data/s]
+Step 7300: loss = 2.02 (2.000 sec) [50.01 data/s]
+Step 7400: loss = 2.13 (2.068 sec) [48.35 data/s]
+Step 7500: loss = 1.96 (2.309 sec) [43.31 data/s]
+Step 7600: loss = 1.84 (2.000 sec) [50.00 data/s]
+Step 7700: loss = 2.04 (2.061 sec) [48.52 data/s]
+Step 7800: loss = 1.92 (1.980 sec) [50.50 data/s]
+Step 7900: loss = 1.80 (2.280 sec) [43.85 data/s]
+Step 8000: loss = 1.80 (1.944 sec) [51.45 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19426  Precision @ 1: 0.3885  Loss: 1.79
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3783  Precision @ 1: 0.3783  Loss: 1.81
+Step 8100: loss = 1.83 (2.325 sec) [43.01 data/s]
+Step 8200: loss = 1.92 (1.979 sec) [50.54 data/s]
+Step 8300: loss = 2.01 (2.302 sec) [43.45 data/s]
+Step 8400: loss = 1.82 (2.291 sec) [43.65 data/s]
+Step 8500: loss = 2.01 (2.251 sec) [44.43 data/s]
+Step 8600: loss = 1.94 (2.147 sec) [46.58 data/s]
+Step 8700: loss = 2.04 (2.233 sec) [44.78 data/s]
+Step 8800: loss = 1.90 (2.331 sec) [42.91 data/s]
+Step 8900: loss = 1.86 (1.962 sec) [50.97 data/s]
+Step 9000: loss = 1.88 (1.969 sec) [50.79 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19145  Precision @ 1: 0.3829  Loss: 1.83
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3811  Precision @ 1: 0.3811  Loss: 1.84
+Step 9100: loss = 2.05 (2.022 sec) [49.45 data/s]
+Step 9200: loss = 1.86 (2.187 sec) [45.73 data/s]
+Step 9300: loss = 1.82 (2.234 sec) [44.76 data/s]
+Step 9400: loss = 1.86 (1.980 sec) [50.51 data/s]
+Step 9500: loss = 1.96 (2.073 sec) [48.24 data/s]
+Step 9600: loss = 1.75 (2.081 sec) [48.06 data/s]
+Step 9700: loss = 1.82 (2.268 sec) [44.09 data/s]
+Step 9800: loss = 1.78 (2.122 sec) [47.13 data/s]
+Step 9900: loss = 1.81 (2.340 sec) [42.74 data/s]
+Step 10000: loss = 1.79 (1.950 sec) [51.29 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19434  Precision @ 1: 0.3887  Loss: 1.78
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3751  Precision @ 1: 0.3751  Loss: 1.80
+Step 10100: loss = 2.02 (2.073 sec) [48.25 data/s]
+Step 10200: loss = 1.86 (2.181 sec) [45.86 data/s]
+Step 10300: loss = 1.87 (1.987 sec) [50.33 data/s]
+Step 10400: loss = 1.77 (1.925 sec) [51.94 data/s]
+Step 10500: loss = 2.12 (1.955 sec) [51.16 data/s]
+Step 10600: loss = 1.98 (2.034 sec) [49.16 data/s]
+Step 10700: loss = 2.02 (2.004 sec) [49.89 data/s]
+Step 10800: loss = 1.81 (2.006 sec) [49.84 data/s]
+Step 10900: loss = 2.01 (2.019 sec) [49.52 data/s]
+Step 11000: loss = 1.92 (1.920 sec) [52.08 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19704  Precision @ 1: 0.3941  Loss: 1.80
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3884  Precision @ 1: 0.3884  Loss: 1.82
+Step 11100: loss = 1.90 (1.972 sec) [50.72 data/s]
+Step 11200: loss = 2.04 (1.998 sec) [50.04 data/s]
+Step 11300: loss = 1.65 (1.960 sec) [51.02 data/s]
+Step 11400: loss = 1.96 (1.928 sec) [51.87 data/s]
+Step 11500: loss = 1.73 (1.931 sec) [51.78 data/s]
+Step 11600: loss = 1.91 (2.038 sec) [49.08 data/s]
+Step 11700: loss = 1.90 (1.946 sec) [51.38 data/s]
+Step 11800: loss = 1.79 (1.997 sec) [50.07 data/s]
+Step 11900: loss = 1.99 (2.030 sec) [49.26 data/s]
+Step 12000: loss = 2.03 (1.932 sec) [51.76 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19327  Precision @ 1: 0.3865  Loss: 1.78
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3820  Precision @ 1: 0.3820  Loss: 1.80
+Step 12100: loss = 1.91 (1.914 sec) [52.25 data/s]
+Step 12200: loss = 1.83 (2.022 sec) [49.46 data/s]
+Step 12300: loss = 1.99 (2.037 sec) [49.08 data/s]
+Step 12400: loss = 1.90 (2.013 sec) [49.68 data/s]
+Step 12500: loss = 1.92 (1.951 sec) [51.26 data/s]
+Step 12600: loss = 1.92 (1.992 sec) [50.19 data/s]
+Step 12700: loss = 2.05 (1.970 sec) [50.77 data/s]
+Step 12800: loss = 1.78 (1.998 sec) [50.05 data/s]
+Step 12900: loss = 1.88 (1.946 sec) [51.39 data/s]
+Step 13000: loss = 1.93 (1.972 sec) [50.71 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 20176  Precision @ 1: 0.4035  Loss: 1.75
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3951  Precision @ 1: 0.3951  Loss: 1.77
+Step 13100: loss = 2.14 (1.962 sec) [50.96 data/s]
+Step 13200: loss = 2.14 (2.019 sec) [49.53 data/s]
+Step 13300: loss = 1.95 (1.949 sec) [51.30 data/s]
+Step 13400: loss = 1.93 (1.927 sec) [51.90 data/s]
+Step 13500: loss = 1.99 (1.985 sec) [50.38 data/s]
+Step 13600: loss = 1.85 (1.948 sec) [51.34 data/s]
+Step 13700: loss = 1.97 (2.000 sec) [50.00 data/s]
+Step 13800: loss = 1.94 (1.945 sec) [51.41 data/s]
+Step 13900: loss = 1.72 (1.954 sec) [51.17 data/s]
+Step 14000: loss = 1.78 (1.989 sec) [50.27 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19590  Precision @ 1: 0.3918  Loss: 1.79
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3870  Precision @ 1: 0.3870  Loss: 1.79
+Step 14100: loss = 1.78 (1.909 sec) [52.37 data/s]
+Step 14200: loss = 1.81 (1.969 sec) [50.78 data/s]
+Step 14300: loss = 1.76 (1.990 sec) [50.25 data/s]
+Step 14400: loss = 2.01 (1.967 sec) [50.85 data/s]
+Step 14500: loss = 1.92 (2.006 sec) [49.85 data/s]
+Step 14600: loss = 1.94 (2.005 sec) [49.89 data/s]
+Step 14700: loss = 1.84 (1.964 sec) [50.91 data/s]
+Step 14800: loss = 2.02 (2.131 sec) [46.92 data/s]
+Step 14900: loss = 1.82 (1.938 sec) [51.61 data/s]
+Step 15000: loss = 1.67 (2.000 sec) [50.00 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19623  Precision @ 1: 0.3925  Loss: 1.81
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3904  Precision @ 1: 0.3904  Loss: 1.83
+Step 15100: loss = 2.00 (1.979 sec) [50.53 data/s]
+Step 15200: loss = 1.95 (1.945 sec) [51.40 data/s]
+Step 15300: loss = 1.85 (1.970 sec) [50.76 data/s]
+Step 15400: loss = 2.03 (2.036 sec) [49.11 data/s]
+Step 15500: loss = 2.07 (1.941 sec) [51.52 data/s]
+Step 15600: loss = 2.19 (1.941 sec) [51.52 data/s]
+Step 15700: loss = 1.95 (1.995 sec) [50.12 data/s]
+Step 15800: loss = 1.98 (2.111 sec) [47.37 data/s]
+Step 15900: loss = 1.89 (1.924 sec) [51.97 data/s]
+Step 16000: loss = 2.02 (2.049 sec) [48.79 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19382  Precision @ 1: 0.3876  Loss: 1.79
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3769  Precision @ 1: 0.3769  Loss: 1.82
+Step 16100: loss = 1.94 (1.912 sec) [52.31 data/s]
+Step 16200: loss = 1.80 (2.011 sec) [49.74 data/s]
+Step 16300: loss = 2.06 (1.976 sec) [50.62 data/s]
+Step 16400: loss = 1.83 (1.982 sec) [50.47 data/s]
+Step 16500: loss = 1.95 (2.028 sec) [49.31 data/s]
+Step 16600: loss = 2.06 (1.959 sec) [51.05 data/s]
+Step 16700: loss = 1.77 (1.979 sec) [50.52 data/s]
+Step 16800: loss = 1.74 (2.017 sec) [49.59 data/s]
+Step 16900: loss = 2.03 (2.016 sec) [49.60 data/s]
+Step 17000: loss = 2.03 (2.017 sec) [49.57 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19610  Precision @ 1: 0.3922  Loss: 1.78
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3972  Precision @ 1: 0.3972  Loss: 1.78
+Step 17100: loss = 1.82 (2.004 sec) [49.91 data/s]
+Step 17200: loss = 1.79 (1.945 sec) [51.42 data/s]
+Step 17300: loss = 1.98 (1.902 sec) [52.58 data/s]
+Step 17400: loss = 1.80 (2.085 sec) [47.97 data/s]
+Step 17500: loss = 1.96 (1.933 sec) [51.74 data/s]
+Step 17600: loss = 1.87 (1.966 sec) [50.87 data/s]
+Step 17700: loss = 1.74 (1.928 sec) [51.87 data/s]
+Step 17800: loss = 2.06 (1.951 sec) [51.26 data/s]
+Step 17900: loss = 1.79 (2.020 sec) [49.50 data/s]
+Step 18000: loss = 2.02 (2.017 sec) [49.59 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19098  Precision @ 1: 0.3820  Loss: 1.80
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3736  Precision @ 1: 0.3736  Loss: 1.82
+Step 18100: loss = 1.81 (1.990 sec) [50.25 data/s]
+Step 18200: loss = 1.83 (1.899 sec) [52.65 data/s]
+Step 18300: loss = 1.87 (1.982 sec) [50.46 data/s]
+Step 18400: loss = 1.89 (2.048 sec) [48.82 data/s]
+Step 18500: loss = 1.83 (1.922 sec) [52.03 data/s]
+Step 18600: loss = 1.72 (2.011 sec) [49.71 data/s]
+Step 18700: loss = 2.02 (1.983 sec) [50.42 data/s]
+Step 18800: loss = 1.92 (1.969 sec) [50.78 data/s]
+Step 18900: loss = 1.83 (1.941 sec) [51.53 data/s]
+Step 19000: loss = 1.78 (2.020 sec) [49.51 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19921  Precision @ 1: 0.3984  Loss: 1.76
+Validation Data Eval:
+  Num examples: 10000  Num correct: 4026  Precision @ 1: 0.4026  Loss: 1.76
+Step 19100: loss = 1.71 (1.924 sec) [51.99 data/s]
+Step 19200: loss = 1.90 (2.028 sec) [49.31 data/s]
+Step 19300: loss = 2.03 (1.924 sec) [51.97 data/s]
+Step 19400: loss = 1.91 (1.909 sec) [52.38 data/s]
+Step 19500: loss = 1.95 (1.942 sec) [51.49 data/s]
+Step 19600: loss = 2.05 (1.994 sec) [50.14 data/s]
+Step 19700: loss = 1.98 (1.916 sec) [52.20 data/s]
+Step 19800: loss = 1.79 (1.978 sec) [50.56 data/s]
+Step 19900: loss = 1.89 (2.001 sec) [49.97 data/s]
+Step 20000: loss = 2.11 (1.929 sec) [51.84 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 20001  Precision @ 1: 0.4000  Loss: 1.76
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3900  Precision @ 1: 0.3900  Loss: 1.77
+Step 20100: loss = 1.95 (2.211 sec) [45.23 data/s]
+Step 20200: loss = 1.95 (1.995 sec) [50.13 data/s]
+Step 20300: loss = 1.95 (1.962 sec) [50.98 data/s]
+Step 20400: loss = 1.72 (2.038 sec) [49.07 data/s]
+Step 20500: loss = 1.72 (1.933 sec) [51.74 data/s]
+Step 20600: loss = 2.09 (1.998 sec) [50.04 data/s]
+Step 20700: loss = 1.83 (2.065 sec) [48.42 data/s]
+Step 20800: loss = 1.99 (1.970 sec) [50.77 data/s]
+Step 20900: loss = 1.85 (1.978 sec) [50.56 data/s]
+Step 21000: loss = 1.83 (1.985 sec) [50.39 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19501  Precision @ 1: 0.3900  Loss: 1.77
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3846  Precision @ 1: 0.3846  Loss: 1.79
+Step 21100: loss = 1.97 (1.962 sec) [50.97 data/s]
+Step 21200: loss = 1.89 (1.983 sec) [50.43 data/s]
+Step 21300: loss = 1.94 (1.967 sec) [50.84 data/s]
+Step 21400: loss = 1.93 (1.911 sec) [52.32 data/s]
+Step 21500: loss = 1.82 (2.027 sec) [49.34 data/s]
+Step 21600: loss = 1.90 (2.053 sec) [48.71 data/s]
+Step 21700: loss = 1.83 (2.025 sec) [49.38 data/s]
+Step 21800: loss = 1.86 (1.990 sec) [50.25 data/s]
+Step 21900: loss = 2.07 (2.008 sec) [49.79 data/s]
+Step 22000: loss = 2.04 (2.024 sec) [49.40 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 18845  Precision @ 1: 0.3769  Loss: 1.82
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3782  Precision @ 1: 0.3782  Loss: 1.83
+Step 22100: loss = 1.87 (1.944 sec) [51.45 data/s]
+Step 22200: loss = 1.99 (1.966 sec) [50.87 data/s]
+Step 22300: loss = 1.90 (1.917 sec) [52.16 data/s]
+Step 22400: loss = 1.86 (1.955 sec) [51.16 data/s]
+Step 22500: loss = 2.08 (2.781 sec) [35.96 data/s]
+Step 22600: loss = 1.80 (2.795 sec) [35.77 data/s]
+Step 22700: loss = 2.13 (2.637 sec) [37.92 data/s]
+Step 22800: loss = 1.75 (2.680 sec) [37.31 data/s]
+Step 22900: loss = 1.88 (2.167 sec) [46.15 data/s]
+Step 23000: loss = 1.84 (2.044 sec) [48.93 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19718  Precision @ 1: 0.3944  Loss: 1.76
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3883  Precision @ 1: 0.3883  Loss: 1.77
+Step 23100: loss = 1.74 (2.007 sec) [49.83 data/s]
+Step 23200: loss = 1.82 (1.933 sec) [51.73 data/s]
+Step 23300: loss = 2.03 (2.029 sec) [49.29 data/s]
+Step 23400: loss = 1.95 (2.111 sec) [47.38 data/s]
+Step 23500: loss = 1.72 (2.016 sec) [49.61 data/s]
+Step 23600: loss = 1.90 (1.969 sec) [50.79 data/s]
+Step 23700: loss = 1.88 (2.027 sec) [49.34 data/s]
+Step 23800: loss = 1.99 (1.989 sec) [50.27 data/s]
+Step 23900: loss = 1.91 (2.001 sec) [49.96 data/s]
+Step 24000: loss = 2.04 (1.952 sec) [51.23 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19948  Precision @ 1: 0.3990  Loss: 1.73
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3983  Precision @ 1: 0.3983  Loss: 1.74
+Step 24100: loss = 1.64 (2.114 sec) [47.31 data/s]
+Step 24200: loss = 2.19 (1.953 sec) [51.20 data/s]
+Step 24300: loss = 1.99 (1.994 sec) [50.14 data/s]
+Step 24400: loss = 1.88 (1.971 sec) [50.73 data/s]
+Step 24500: loss = 2.01 (1.971 sec) [50.74 data/s]
+Step 24600: loss = 1.80 (2.028 sec) [49.30 data/s]
+Step 24700: loss = 1.81 (2.007 sec) [49.82 data/s]
+Step 24800: loss = 1.83 (1.981 sec) [50.49 data/s]
+Step 24900: loss = 1.99 (2.039 sec) [49.03 data/s]
+Step 25000: loss = 1.82 (2.004 sec) [49.89 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19199  Precision @ 1: 0.3840  Loss: 1.79
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3824  Precision @ 1: 0.3824  Loss: 1.79
+Step 25100: loss = 1.94 (2.002 sec) [49.96 data/s]
+Step 25200: loss = 1.93 (2.000 sec) [50.01 data/s]
+Step 25300: loss = 1.87 (1.980 sec) [50.52 data/s]
+Step 25400: loss = 1.97 (1.925 sec) [51.94 data/s]
+Step 25500: loss = 1.85 (2.091 sec) [47.82 data/s]
+Step 25600: loss = 2.05 (1.988 sec) [50.30 data/s]
+Step 25700: loss = 1.86 (1.958 sec) [51.08 data/s]
+Step 25800: loss = 1.95 (1.951 sec) [51.24 data/s]
+Step 25900: loss = 1.74 (1.972 sec) [50.71 data/s]
+Step 26000: loss = 1.97 (2.360 sec) [42.37 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 20119  Precision @ 1: 0.4024  Loss: 1.75
+Validation Data Eval:
+  Num examples: 10000  Num correct: 4003  Precision @ 1: 0.4003  Loss: 1.76
+Step 26100: loss = 1.91 (2.000 sec) [50.01 data/s]
+Step 26200: loss = 1.82 (2.009 sec) [49.78 data/s]
+Step 26300: loss = 1.98 (2.349 sec) [42.57 data/s]
+Step 26400: loss = 1.85 (1.957 sec) [51.10 data/s]
+Step 26500: loss = 1.93 (1.964 sec) [50.93 data/s]
+Step 26600: loss = 1.85 (1.983 sec) [50.42 data/s]
+Step 26700: loss = 1.99 (2.087 sec) [47.91 data/s]
+Step 26800: loss = 2.11 (1.999 sec) [50.02 data/s]
+Step 26900: loss = 1.91 (1.987 sec) [50.32 data/s]
+Step 27000: loss = 1.81 (1.966 sec) [50.87 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19557  Precision @ 1: 0.3911  Loss: 1.79
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3857  Precision @ 1: 0.3857  Loss: 1.81
+Step 27100: loss = 1.88 (2.069 sec) [48.34 data/s]
+Step 27200: loss = 1.84 (2.028 sec) [49.30 data/s]
+Step 27300: loss = 1.98 (1.973 sec) [50.68 data/s]
+Step 27400: loss = 1.82 (2.035 sec) [49.15 data/s]
+Step 27500: loss = 1.86 (1.971 sec) [50.72 data/s]
+Step 27600: loss = 1.71 (1.976 sec) [50.59 data/s]
+Step 27700: loss = 1.90 (2.035 sec) [49.15 data/s]
+Step 27800: loss = 2.05 (1.965 sec) [50.90 data/s]
+Step 27900: loss = 1.84 (2.012 sec) [49.71 data/s]
+Step 28000: loss = 1.74 (2.067 sec) [48.39 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 20203  Precision @ 1: 0.4041  Loss: 1.74
+Validation Data Eval:
+  Num examples: 10000  Num correct: 4018  Precision @ 1: 0.4018  Loss: 1.75
+Step 28100: loss = 1.94 (2.061 sec) [48.53 data/s]
+Step 28200: loss = 1.60 (2.080 sec) [48.08 data/s]
+Step 28300: loss = 1.90 (1.944 sec) [51.44 data/s]
+Step 28400: loss = 1.98 (1.939 sec) [51.58 data/s]
+Step 28500: loss = 2.11 (2.078 sec) [48.13 data/s]
+Step 28600: loss = 1.92 (2.046 sec) [48.87 data/s]
+Step 28700: loss = 1.94 (2.042 sec) [48.97 data/s]
+Step 28800: loss = 1.84 (2.461 sec) [40.64 data/s]
+Step 28900: loss = 1.99 (2.183 sec) [45.80 data/s]
+Step 29000: loss = 1.98 (2.041 sec) [48.99 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19906  Precision @ 1: 0.3981  Loss: 1.75
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3979  Precision @ 1: 0.3979  Loss: 1.77
+Step 29100: loss = 1.90 (2.356 sec) [42.44 data/s]
+Step 29200: loss = 1.70 (2.650 sec) [37.73 data/s]
+Step 29300: loss = 1.80 (2.780 sec) [35.97 data/s]
+Step 29400: loss = 1.82 (2.476 sec) [40.38 data/s]
+Step 29500: loss = 2.03 (2.619 sec) [38.19 data/s]
+Step 29600: loss = 1.98 (2.417 sec) [41.38 data/s]
+Step 29700: loss = 1.71 (2.382 sec) [41.98 data/s]
+Step 29800: loss = 1.80 (2.706 sec) [36.96 data/s]
+Step 29900: loss = 1.88 (2.824 sec) [35.42 data/s]
+Step 30000: loss = 1.76 (3.181 sec) [31.43 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19645  Precision @ 1: 0.3929  Loss: 1.77
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3887  Precision @ 1: 0.3887  Loss: 1.78
+Step 30100: loss = 2.08 (2.309 sec) [43.30 data/s]
+Step 30200: loss = 1.98 (2.785 sec) [35.91 data/s]
+Step 30300: loss = 1.99 (2.870 sec) [34.84 data/s]
+Step 30400: loss = 1.75 (2.460 sec) [40.66 data/s]
+Step 30500: loss = 1.68 (2.990 sec) [33.45 data/s]
+Step 30600: loss = 2.00 (2.544 sec) [39.31 data/s]
+Step 30700: loss = 1.80 (2.427 sec) [41.20 data/s]
+Step 30800: loss = 1.88 (2.942 sec) [33.99 data/s]
+Step 30900: loss = 1.93 (2.874 sec) [34.79 data/s]
+Step 31000: loss = 1.69 (3.186 sec) [31.39 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19085  Precision @ 1: 0.3817  Loss: 1.80
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3792  Precision @ 1: 0.3792  Loss: 1.82
+Step 31100: loss = 2.13 (2.444 sec) [40.92 data/s]
+Step 31200: loss = 1.82 (2.006 sec) [49.84 data/s]
+Step 31300: loss = 1.89 (2.131 sec) [46.93 data/s]
+Step 31400: loss = 1.86 (2.120 sec) [47.17 data/s]
+Step 31500: loss = 1.81 (2.389 sec) [41.86 data/s]
+Step 31600: loss = 1.87 (1.973 sec) [50.69 data/s]
+Step 31700: loss = 1.77 (2.068 sec) [48.35 data/s]
+Step 31800: loss = 1.69 (2.232 sec) [44.80 data/s]
+Step 31900: loss = 1.69 (2.479 sec) [40.33 data/s]
+Step 32000: loss = 1.96 (2.099 sec) [47.65 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19325  Precision @ 1: 0.3865  Loss: 1.80
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3857  Precision @ 1: 0.3857  Loss: 1.80
+Step 32100: loss = 1.71 (2.207 sec) [45.32 data/s]
+Step 32200: loss = 1.58 (2.160 sec) [46.29 data/s]
+Step 32300: loss = 1.93 (2.120 sec) [47.17 data/s]
+Step 32400: loss = 1.76 (2.085 sec) [47.97 data/s]
+Step 32500: loss = 1.86 (2.375 sec) [42.11 data/s]
+Step 32600: loss = 1.66 (2.029 sec) [49.29 data/s]
+Step 32700: loss = 1.78 (2.201 sec) [45.43 data/s]
+Step 32800: loss = 1.96 (2.268 sec) [44.08 data/s]
+Step 32900: loss = 1.96 (2.127 sec) [47.00 data/s]
+Step 33000: loss = 1.81 (2.152 sec) [46.48 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 20265  Precision @ 1: 0.4053  Loss: 1.75
+Validation Data Eval:
+  Num examples: 10000  Num correct: 4018  Precision @ 1: 0.4018  Loss: 1.78
+Step 33100: loss = 1.74 (2.043 sec) [48.95 data/s]
+Step 33200: loss = 1.92 (2.155 sec) [46.40 data/s]
+Step 33300: loss = 2.05 (2.189 sec) [45.69 data/s]
+Step 33400: loss = 1.97 (2.318 sec) [43.15 data/s]
+Step 33500: loss = 1.85 (2.078 sec) [48.13 data/s]
+Step 33600: loss = 1.90 (2.072 sec) [48.26 data/s]
+Step 33700: loss = 1.90 (2.340 sec) [42.74 data/s]
+Step 33800: loss = 1.93 (2.041 sec) [48.99 data/s]
+Step 33900: loss = 1.85 (2.135 sec) [46.84 data/s]
+Step 34000: loss = 1.85 (2.063 sec) [48.48 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 18362  Precision @ 1: 0.3672  Loss: 1.86
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3603  Precision @ 1: 0.3603  Loss: 1.88
+Step 34100: loss = 2.32 (2.063 sec) [48.47 data/s]
+Step 34200: loss = 1.68 (2.490 sec) [40.17 data/s]
+Step 34300: loss = 1.81 (3.170 sec) [31.54 data/s]
+Step 34400: loss = 1.99 (3.239 sec) [30.87 data/s]
+Step 34500: loss = 1.85 (3.269 sec) [30.59 data/s]
+Step 34600: loss = 1.82 (2.843 sec) [35.17 data/s]
+Step 34700: loss = 1.76 (2.404 sec) [41.60 data/s]
+Step 34800: loss = 1.89 (2.406 sec) [41.57 data/s]
+Step 34900: loss = 1.88 (2.629 sec) [38.03 data/s]
+Step 35000: loss = 1.91 (2.092 sec) [47.81 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19627  Precision @ 1: 0.3925  Loss: 1.77
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3866  Precision @ 1: 0.3866  Loss: 1.78
+Step 35100: loss = 2.06 (2.503 sec) [39.95 data/s]
+Step 35200: loss = 1.85 (2.555 sec) [39.14 data/s]
+Step 35300: loss = 1.89 (2.461 sec) [40.64 data/s]
+Step 35400: loss = 1.85 (2.498 sec) [40.03 data/s]
+Step 35500: loss = 2.08 (2.122 sec) [47.13 data/s]
+Step 35600: loss = 1.93 (2.217 sec) [45.11 data/s]
+Step 35700: loss = 1.77 (2.572 sec) [38.88 data/s]
+Step 35800: loss = 1.94 (2.485 sec) [40.24 data/s]
+Step 35900: loss = 1.95 (2.133 sec) [46.88 data/s]
+Step 36000: loss = 1.92 (2.192 sec) [45.63 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19743  Precision @ 1: 0.3949  Loss: 1.76
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3947  Precision @ 1: 0.3947  Loss: 1.78
+Step 36100: loss = 1.92 (2.409 sec) [41.50 data/s]
+Step 36200: loss = 1.95 (2.036 sec) [49.12 data/s]
+Step 36300: loss = 2.14 (2.568 sec) [38.94 data/s]
+Step 36400: loss = 2.10 (2.537 sec) [39.42 data/s]
+Step 36500: loss = 1.85 (2.067 sec) [48.37 data/s]
+Step 36600: loss = 1.76 (2.529 sec) [39.55 data/s]
+Step 36700: loss = 1.84 (2.374 sec) [42.13 data/s]
+Step 36800: loss = 1.84 (2.535 sec) [39.44 data/s]
+Step 36900: loss = 1.74 (2.034 sec) [49.17 data/s]
+Step 37000: loss = 1.83 (2.550 sec) [39.22 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19586  Precision @ 1: 0.3917  Loss: 1.76
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3923  Precision @ 1: 0.3923  Loss: 1.76
+Step 37100: loss = 1.79 (2.440 sec) [40.99 data/s]
+Step 37200: loss = 1.99 (2.486 sec) [40.23 data/s]
+Step 37300: loss = 1.85 (2.340 sec) [42.73 data/s]
+Step 37400: loss = 2.05 (2.033 sec) [49.18 data/s]
+Step 37500: loss = 1.84 (2.443 sec) [40.93 data/s]
+Step 37600: loss = 1.95 (2.546 sec) [39.27 data/s]
+Step 37700: loss = 1.89 (2.464 sec) [40.58 data/s]
+Step 37800: loss = 2.16 (2.156 sec) [46.38 data/s]
+Step 37900: loss = 1.77 (2.360 sec) [42.38 data/s]
+Step 38000: loss = 1.93 (2.490 sec) [40.17 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 20044  Precision @ 1: 0.4009  Loss: 1.75
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3933  Precision @ 1: 0.3933  Loss: 1.76
+Step 38100: loss = 1.84 (2.515 sec) [39.77 data/s]
+Step 38200: loss = 1.74 (2.464 sec) [40.58 data/s]
+Step 38300: loss = 2.02 (2.100 sec) [47.62 data/s]
+Step 38400: loss = 2.04 (2.501 sec) [39.98 data/s]
+Step 38500: loss = 1.73 (2.514 sec) [39.78 data/s]
+Step 38600: loss = 1.83 (2.556 sec) [39.12 data/s]
+Step 38700: loss = 1.92 (2.059 sec) [48.56 data/s]
+Step 38800: loss = 1.71 (2.381 sec) [42.01 data/s]
+Step 38900: loss = 1.89 (2.517 sec) [39.73 data/s]
+Step 39000: loss = 1.88 (2.390 sec) [41.85 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 20478  Precision @ 1: 0.4096  Loss: 1.71
+Validation Data Eval:
+  Num examples: 10000  Num correct: 4086  Precision @ 1: 0.4086  Loss: 1.73
+Step 39100: loss = 1.77 (2.548 sec) [39.24 data/s]
+Step 39200: loss = 1.81 (2.062 sec) [48.51 data/s]
+Step 39300: loss = 1.90 (2.488 sec) [40.19 data/s]
+Step 39400: loss = 1.97 (2.378 sec) [42.06 data/s]
+Step 39500: loss = 1.70 (2.604 sec) [38.41 data/s]
+Step 39600: loss = 1.80 (2.130 sec) [46.94 data/s]
+Step 39700: loss = 1.75 (2.320 sec) [43.09 data/s]
+Step 39800: loss = 1.87 (2.529 sec) [39.55 data/s]
+Step 39900: loss = 1.76 (2.050 sec) [48.78 data/s]
+Step 40000: loss = 1.74 (2.448 sec) [40.85 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 20983  Precision @ 1: 0.4197  Loss: 1.69
+Validation Data Eval:
+  Num examples: 10000  Num correct: 4180  Precision @ 1: 0.4180  Loss: 1.70
+
+
+Ranks layer 1 =  [   1   32   32 1024  768    3    1]
+Ranks layer 2 =  [   1   32   32 1024 1024    4    1]
+Ranks layer 3 =  [  1  16  16 256 256   4   1]

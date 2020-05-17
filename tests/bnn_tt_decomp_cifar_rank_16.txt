@@ -1,0 +1,559 @@
+/content/TensorNet-TF/experiments/cifar-10/FC-Tensorizing-Neural-Networks/tt-layer_and_quantization
+/content/TensorNet-TF/experiments/cifar-10/FC-Tensorizing-Neural-Networks/tt-layer_and_quantization
+2020-05-14 22:30:50.738071: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-05-14 22:30:52.299055: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX512F
+2020-05-14 22:30:52.303897: I tensorflow/core/platform/profile_utils/cpu_utils.cc:102] CPU Frequency: 2000160000 Hz
+2020-05-14 22:30:52.304074: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1e66bc0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-05-14 22:30:52.304104: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-05-14 22:30:52.305945: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-05-14 22:30:52.427265: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-14 22:30:52.427803: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1e66d80 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-05-14 22:30:52.427834: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla P4, Compute Capability 6.1
+2020-05-14 22:30:52.427994: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-14 22:30:52.428343: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla P4 computeCapability: 6.1
+coreClock: 1.1135GHz coreCount: 20 deviceMemorySize: 7.43GiB deviceMemoryBandwidth: 178.99GiB/s
+2020-05-14 22:30:52.428385: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-05-14 22:30:52.430002: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-05-14 22:30:52.431620: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-05-14 22:30:52.431958: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-05-14 22:30:52.433381: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-05-14 22:30:52.434122: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-05-14 22:30:52.436953: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-05-14 22:30:52.437053: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-14 22:30:52.437444: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-14 22:30:52.437808: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2020-05-14 22:30:52.437853: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-05-14 22:30:52.974691: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-05-14 22:30:52.974750: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2020-05-14 22:30:52.974771: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N 
+2020-05-14 22:30:52.974962: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-14 22:30:52.975393: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-14 22:30:52.975852: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6966 MB memory) -> physical GPU (device: 0, name: Tesla P4, pci bus id: 0000:00:04.0, compute capability: 6.1)
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+W0514 22:30:55.308824 139848767166336 deprecation.py:506] From /usr/local/lib/python3.6/dist-packages/tensorflow/python/ops/resource_variable_ops.py:1666: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+2020-05-14 22:30:55.420426: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-14 22:30:55.420870: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla P4 computeCapability: 6.1
+coreClock: 1.1135GHz coreCount: 20 deviceMemorySize: 7.43GiB deviceMemoryBandwidth: 178.99GiB/s
+2020-05-14 22:30:55.420917: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-05-14 22:30:55.420967: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-05-14 22:30:55.420988: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-05-14 22:30:55.421008: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-05-14 22:30:55.421031: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-05-14 22:30:55.421049: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-05-14 22:30:55.421069: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-05-14 22:30:55.421146: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-14 22:30:55.421555: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-14 22:30:55.421866: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+WARNING:tensorflow:From /content/TensorNet-TF/experiments/cifar-10/FC-Tensorizing-Neural-Networks/tt-layer_and_quantization/net.py:93: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+W0514 22:30:55.443478 139848767166336 deprecation.py:323] From /content/TensorNet-TF/experiments/cifar-10/FC-Tensorizing-Neural-Networks/tt-layer_and_quantization/net.py:93: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /content/TensorNet-TF/experiments/cifar-10/FC-Tensorizing-Neural-Networks/tt-layer_and_quantization/net.py:117: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+W0514 22:30:55.445236 139848767166336 deprecation.py:506] From /content/TensorNet-TF/experiments/cifar-10/FC-Tensorizing-Neural-Networks/tt-layer_and_quantization/net.py:117: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /content/TensorNet-TF/experiments/cifar-10/FC-Tensorizing-Neural-Networks/tt-layer_and_quantization/net.py:144: sparse_to_dense (from tensorflow.python.ops.sparse_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Create a `tf.sparse.SparseTensor` and use `tf.sparse.to_dense` instead.
+W0514 22:30:55.701784 139848767166336 deprecation.py:323] From /content/TensorNet-TF/experiments/cifar-10/FC-Tensorizing-Neural-Networks/tt-layer_and_quantization/net.py:144: sparse_to_dense (from tensorflow.python.ops.sparse_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Create a `tf.sparse.SparseTensor` and use `tf.sparse.to_dense` instead.
+WARNING:tensorflow:From /content/TensorNet-TF/experiments/cifar-10/FC-Tensorizing-Neural-Networks/tt-layer_and_quantization/net.py:149: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+W0514 22:30:55.702932 139848767166336 deprecation.py:323] From /content/TensorNet-TF/experiments/cifar-10/FC-Tensorizing-Neural-Networks/tt-layer_and_quantization/net.py:149: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+2020-05-14 22:30:56.290422: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-14 22:30:56.290910: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla P4 computeCapability: 6.1
+coreClock: 1.1135GHz coreCount: 20 deviceMemorySize: 7.43GiB deviceMemoryBandwidth: 178.99GiB/s
+2020-05-14 22:30:56.290961: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-05-14 22:30:56.291008: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-05-14 22:30:56.291030: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-05-14 22:30:56.291047: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-05-14 22:30:56.291066: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-05-14 22:30:56.291084: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-05-14 22:30:56.291103: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-05-14 22:30:56.291180: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-14 22:30:56.291617: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-14 22:30:56.291962: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2020-05-14 22:30:56.292003: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-05-14 22:30:56.292018: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2020-05-14 22:30:56.292027: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N 
+2020-05-14 22:30:56.292112: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-14 22:30:56.292525: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-05-14 22:30:56.292868: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6966 MB memory) -> physical GPU (device: 0, name: Tesla P4, pci bus id: 0000:00:04.0, compute capability: 6.1)
+2020-05-14 22:30:56.928303: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+Step 100: loss = 3.04 (0.494 sec) [202.24 data/s]
+Step 200: loss = 2.43 (0.496 sec) [201.71 data/s]
+Step 300: loss = 2.49 (0.495 sec) [202.05 data/s]
+Step 400: loss = 2.50 (0.495 sec) [201.91 data/s]
+Step 500: loss = 2.42 (0.495 sec) [202.13 data/s]
+Step 600: loss = 2.10 (0.496 sec) [201.62 data/s]
+Step 700: loss = 2.22 (0.497 sec) [201.12 data/s]
+Step 800: loss = 2.26 (0.496 sec) [201.80 data/s]
+Step 900: loss = 2.38 (0.494 sec) [202.25 data/s]
+Step 1000: loss = 2.33 (0.495 sec) [201.98 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 17522  Precision @ 1: 0.3504  Loss: 2.00
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3371  Precision @ 1: 0.3371  Loss: 2.02
+Step 1100: loss = 2.06 (0.494 sec) [202.38 data/s]
+Step 1200: loss = 2.29 (0.496 sec) [201.63 data/s]
+Step 1300: loss = 2.10 (0.495 sec) [201.83 data/s]
+Step 1400: loss = 2.08 (0.495 sec) [201.96 data/s]
+Step 1500: loss = 2.26 (0.494 sec) [202.37 data/s]
+Step 1600: loss = 2.08 (0.496 sec) [201.73 data/s]
+Step 1700: loss = 1.98 (0.494 sec) [202.37 data/s]
+Step 1800: loss = 2.10 (0.495 sec) [202.10 data/s]
+Step 1900: loss = 1.93 (0.496 sec) [201.49 data/s]
+Step 2000: loss = 2.14 (0.494 sec) [202.32 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 18618  Precision @ 1: 0.3724  Loss: 1.89
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3612  Precision @ 1: 0.3612  Loss: 1.91
+Step 2100: loss = 2.12 (0.495 sec) [202.10 data/s]
+Step 2200: loss = 1.97 (0.495 sec) [202.12 data/s]
+Step 2300: loss = 1.97 (0.494 sec) [202.27 data/s]
+Step 2400: loss = 2.08 (0.496 sec) [201.60 data/s]
+Step 2500: loss = 1.88 (0.496 sec) [201.71 data/s]
+Step 2600: loss = 1.93 (0.495 sec) [201.99 data/s]
+Step 2700: loss = 1.93 (0.494 sec) [202.44 data/s]
+Step 2800: loss = 1.93 (0.496 sec) [201.58 data/s]
+Step 2900: loss = 2.20 (0.496 sec) [201.74 data/s]
+Step 3000: loss = 2.00 (0.495 sec) [201.96 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 18647  Precision @ 1: 0.3729  Loss: 1.87
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3657  Precision @ 1: 0.3657  Loss: 1.91
+Step 3100: loss = 1.93 (0.494 sec) [202.24 data/s]
+Step 3200: loss = 2.08 (0.495 sec) [202.15 data/s]
+Step 3300: loss = 2.20 (0.494 sec) [202.33 data/s]
+Step 3400: loss = 2.07 (0.496 sec) [201.42 data/s]
+Step 3500: loss = 1.97 (0.495 sec) [202.21 data/s]
+Step 3600: loss = 1.97 (0.495 sec) [201.88 data/s]
+Step 3700: loss = 2.06 (0.495 sec) [202.19 data/s]
+Step 3800: loss = 1.91 (0.495 sec) [202.01 data/s]
+Step 3900: loss = 1.91 (0.495 sec) [201.98 data/s]
+Step 4000: loss = 1.97 (0.494 sec) [202.30 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 18544  Precision @ 1: 0.3709  Loss: 1.90
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3681  Precision @ 1: 0.3681  Loss: 1.91
+Step 4100: loss = 2.06 (0.494 sec) [202.26 data/s]
+Step 4200: loss = 1.87 (0.494 sec) [202.28 data/s]
+Step 4300: loss = 2.00 (0.495 sec) [201.98 data/s]
+Step 4400: loss = 1.94 (0.494 sec) [202.23 data/s]
+Step 4500: loss = 2.03 (0.494 sec) [202.36 data/s]
+Step 4600: loss = 1.98 (0.494 sec) [202.45 data/s]
+Step 4700: loss = 2.09 (0.495 sec) [202.02 data/s]
+Step 4800: loss = 1.78 (0.494 sec) [202.29 data/s]
+Step 4900: loss = 1.85 (0.494 sec) [202.39 data/s]
+Step 5000: loss = 2.10 (0.494 sec) [202.25 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 18899  Precision @ 1: 0.3780  Loss: 1.86
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3694  Precision @ 1: 0.3694  Loss: 1.87
+Step 5100: loss = 2.15 (0.494 sec) [202.29 data/s]
+Step 5200: loss = 1.82 (0.494 sec) [202.62 data/s]
+Step 5300: loss = 2.03 (0.495 sec) [202.03 data/s]
+Step 5400: loss = 1.88 (0.494 sec) [202.32 data/s]
+Step 5500: loss = 1.85 (0.494 sec) [202.40 data/s]
+Step 5600: loss = 2.02 (0.493 sec) [202.64 data/s]
+Step 5700: loss = 2.08 (0.494 sec) [202.41 data/s]
+Step 5800: loss = 1.91 (0.494 sec) [202.38 data/s]
+Step 5900: loss = 2.04 (0.494 sec) [202.28 data/s]
+Step 6000: loss = 2.06 (0.495 sec) [202.02 data/s]
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/training/saver.py:971: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+W0514 23:30:33.368329 139848767166336 deprecation.py:323] From /usr/local/lib/python3.6/dist-packages/tensorflow/python/training/saver.py:971: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+Training Data Eval:
+  Num examples: 50000  Num correct: 18772  Precision @ 1: 0.3754  Loss: 1.86
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3640  Precision @ 1: 0.3640  Loss: 1.88
+Step 6100: loss = 2.04 (0.494 sec) [202.23 data/s]
+Step 6200: loss = 2.05 (0.493 sec) [202.70 data/s]
+Step 6300: loss = 1.95 (0.495 sec) [202.05 data/s]
+Step 6400: loss = 2.00 (0.494 sec) [202.27 data/s]
+Step 6500: loss = 2.19 (0.494 sec) [202.44 data/s]
+Step 6600: loss = 2.05 (0.494 sec) [202.40 data/s]
+Step 6700: loss = 1.98 (0.495 sec) [202.17 data/s]
+Step 6800: loss = 1.97 (0.494 sec) [202.56 data/s]
+Step 6900: loss = 1.88 (0.495 sec) [202.16 data/s]
+Step 7000: loss = 1.95 (0.494 sec) [202.28 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 18649  Precision @ 1: 0.3730  Loss: 1.90
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3736  Precision @ 1: 0.3736  Loss: 1.91
+Step 7100: loss = 1.92 (0.494 sec) [202.42 data/s]
+Step 7200: loss = 2.01 (0.494 sec) [202.58 data/s]
+Step 7300: loss = 2.17 (0.495 sec) [201.87 data/s]
+Step 7400: loss = 1.97 (0.494 sec) [202.52 data/s]
+Step 7500: loss = 1.95 (0.494 sec) [202.43 data/s]
+Step 7600: loss = 1.85 (0.495 sec) [202.19 data/s]
+Step 7700: loss = 2.03 (0.496 sec) [201.81 data/s]
+Step 7800: loss = 1.92 (0.494 sec) [202.41 data/s]
+Step 7900: loss = 1.83 (0.495 sec) [202.09 data/s]
+Step 8000: loss = 1.83 (0.498 sec) [200.97 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 18804  Precision @ 1: 0.3761  Loss: 1.87
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3671  Precision @ 1: 0.3671  Loss: 1.89
+Step 8100: loss = 2.24 (0.494 sec) [202.58 data/s]
+Step 8200: loss = 2.02 (0.495 sec) [201.94 data/s]
+Step 8300: loss = 1.93 (0.495 sec) [202.20 data/s]
+Step 8400: loss = 1.76 (0.496 sec) [201.79 data/s]
+Step 8500: loss = 1.88 (0.494 sec) [202.37 data/s]
+Step 8600: loss = 1.90 (0.497 sec) [201.10 data/s]
+Step 8700: loss = 2.03 (0.495 sec) [202.15 data/s]
+Step 8800: loss = 1.93 (0.495 sec) [201.85 data/s]
+Step 8900: loss = 1.98 (0.494 sec) [202.33 data/s]
+Step 9000: loss = 2.11 (0.494 sec) [202.23 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 18334  Precision @ 1: 0.3667  Loss: 1.91
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3669  Precision @ 1: 0.3669  Loss: 1.92
+Step 9100: loss = 2.05 (0.494 sec) [202.40 data/s]
+Step 9200: loss = 2.09 (0.496 sec) [201.72 data/s]
+Step 9300: loss = 2.02 (0.499 sec) [200.52 data/s]
+Step 9400: loss = 1.91 (0.494 sec) [202.60 data/s]
+Step 9500: loss = 2.10 (0.494 sec) [202.34 data/s]
+Step 9600: loss = 1.71 (0.495 sec) [201.90 data/s]
+Step 9700: loss = 1.92 (0.495 sec) [201.84 data/s]
+Step 9800: loss = 1.87 (0.495 sec) [202.13 data/s]
+Step 9900: loss = 1.87 (0.494 sec) [202.38 data/s]
+Step 10000: loss = 1.83 (0.495 sec) [202.06 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 18417  Precision @ 1: 0.3683  Loss: 1.84
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3639  Precision @ 1: 0.3639  Loss: 1.87
+Step 10100: loss = 2.05 (0.494 sec) [202.46 data/s]
+Step 10200: loss = 1.91 (0.496 sec) [201.49 data/s]
+Step 10300: loss = 2.06 (0.496 sec) [201.61 data/s]
+Step 10400: loss = 2.01 (0.495 sec) [201.82 data/s]
+Step 10500: loss = 2.15 (0.495 sec) [202.04 data/s]
+Step 10600: loss = 1.95 (0.494 sec) [202.34 data/s]
+Step 10700: loss = 2.00 (0.496 sec) [201.67 data/s]
+Step 10800: loss = 1.93 (0.494 sec) [202.45 data/s]
+Step 10900: loss = 2.05 (0.494 sec) [202.50 data/s]
+Step 11000: loss = 1.94 (0.495 sec) [201.87 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 18710  Precision @ 1: 0.3742  Loss: 1.83
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3688  Precision @ 1: 0.3688  Loss: 1.84
+Step 11100: loss = 2.06 (0.494 sec) [202.38 data/s]
+Step 11200: loss = 2.15 (0.495 sec) [202.12 data/s]
+Step 11300: loss = 1.84 (0.495 sec) [201.86 data/s]
+Step 11400: loss = 1.93 (0.494 sec) [202.27 data/s]
+Step 11500: loss = 1.90 (0.493 sec) [202.65 data/s]
+Step 11600: loss = 1.88 (0.494 sec) [202.49 data/s]
+Step 11700: loss = 1.84 (0.495 sec) [202.06 data/s]
+Step 11800: loss = 1.75 (0.496 sec) [201.49 data/s]
+Step 11900: loss = 2.02 (0.495 sec) [202.02 data/s]
+Step 12000: loss = 1.98 (0.495 sec) [202.07 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 18586  Precision @ 1: 0.3717  Loss: 1.89
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3680  Precision @ 1: 0.3680  Loss: 1.90
+Step 12100: loss = 2.02 (0.495 sec) [201.85 data/s]
+Step 12200: loss = 1.98 (0.494 sec) [202.41 data/s]
+Step 12300: loss = 2.14 (0.494 sec) [202.33 data/s]
+Step 12400: loss = 1.98 (0.494 sec) [202.26 data/s]
+Step 12500: loss = 1.98 (0.494 sec) [202.48 data/s]
+Step 12600: loss = 2.07 (0.495 sec) [201.95 data/s]
+Step 12700: loss = 2.20 (0.494 sec) [202.48 data/s]
+Step 12800: loss = 1.98 (0.494 sec) [202.55 data/s]
+Step 12900: loss = 2.01 (0.494 sec) [202.63 data/s]
+Step 13000: loss = 2.01 (0.495 sec) [202.19 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19378  Precision @ 1: 0.3876  Loss: 1.82
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3821  Precision @ 1: 0.3821  Loss: 1.85
+Step 13100: loss = 2.15 (0.495 sec) [202.09 data/s]
+Step 13200: loss = 2.20 (0.494 sec) [202.36 data/s]
+Step 13300: loss = 1.94 (0.494 sec) [202.49 data/s]
+Step 13400: loss = 1.93 (0.495 sec) [202.19 data/s]
+Step 13500: loss = 2.04 (0.499 sec) [200.37 data/s]
+Step 13600: loss = 1.93 (0.495 sec) [202.18 data/s]
+Step 13700: loss = 1.91 (0.494 sec) [202.26 data/s]
+Step 13800: loss = 1.91 (0.493 sec) [202.68 data/s]
+Step 13900: loss = 1.83 (0.495 sec) [201.88 data/s]
+Step 14000: loss = 1.85 (0.494 sec) [202.34 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19291  Precision @ 1: 0.3858  Loss: 1.83
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3819  Precision @ 1: 0.3819  Loss: 1.85
+Step 14100: loss = 1.79 (0.495 sec) [202.04 data/s]
+Step 14200: loss = 1.74 (0.494 sec) [202.29 data/s]
+Step 14300: loss = 2.00 (0.495 sec) [201.93 data/s]
+Step 14400: loss = 2.16 (0.494 sec) [202.60 data/s]
+Step 14500: loss = 1.99 (0.495 sec) [202.13 data/s]
+Step 14600: loss = 2.06 (0.497 sec) [201.15 data/s]
+Step 14700: loss = 1.89 (0.495 sec) [202.20 data/s]
+Step 14800: loss = 2.01 (0.494 sec) [202.33 data/s]
+Step 14900: loss = 2.02 (0.494 sec) [202.33 data/s]
+Step 15000: loss = 1.91 (0.494 sec) [202.44 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 18279  Precision @ 1: 0.3656  Loss: 1.91
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3640  Precision @ 1: 0.3640  Loss: 1.93
+Step 15100: loss = 2.19 (0.498 sec) [200.97 data/s]
+Step 15200: loss = 2.01 (0.494 sec) [202.48 data/s]
+Step 15300: loss = 1.90 (0.495 sec) [202.13 data/s]
+Step 15400: loss = 2.11 (0.495 sec) [201.95 data/s]
+Step 15500: loss = 2.04 (0.497 sec) [201.02 data/s]
+Step 15600: loss = 2.13 (0.494 sec) [202.63 data/s]
+Step 15700: loss = 2.02 (0.494 sec) [202.32 data/s]
+Step 15800: loss = 1.92 (0.494 sec) [202.43 data/s]
+Step 15900: loss = 2.07 (0.494 sec) [202.56 data/s]
+Step 16000: loss = 2.07 (0.495 sec) [202.07 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 18590  Precision @ 1: 0.3718  Loss: 1.88
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3676  Precision @ 1: 0.3676  Loss: 1.90
+Step 16100: loss = 1.97 (0.494 sec) [202.30 data/s]
+Step 16200: loss = 1.92 (0.495 sec) [202.22 data/s]
+Step 16300: loss = 2.10 (0.495 sec) [202.01 data/s]
+Step 16400: loss = 1.85 (0.495 sec) [201.82 data/s]
+Step 16500: loss = 1.93 (0.495 sec) [202.12 data/s]
+Step 16600: loss = 2.06 (0.496 sec) [201.71 data/s]
+Step 16700: loss = 1.90 (0.494 sec) [202.50 data/s]
+Step 16800: loss = 1.83 (0.495 sec) [201.99 data/s]
+Step 16900: loss = 1.95 (0.494 sec) [202.46 data/s]
+Step 17000: loss = 2.14 (0.495 sec) [202.16 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 18829  Precision @ 1: 0.3766  Loss: 1.87
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3685  Precision @ 1: 0.3685  Loss: 1.87
+Step 17100: loss = 1.82 (0.495 sec) [201.94 data/s]
+Step 17200: loss = 1.86 (0.495 sec) [202.07 data/s]
+Step 17300: loss = 1.95 (0.494 sec) [202.55 data/s]
+Step 17400: loss = 2.00 (0.494 sec) [202.33 data/s]
+Step 17500: loss = 2.02 (0.496 sec) [201.61 data/s]
+Step 17600: loss = 1.86 (0.495 sec) [202.05 data/s]
+Step 17700: loss = 1.87 (0.495 sec) [202.15 data/s]
+Step 17800: loss = 2.15 (0.495 sec) [201.97 data/s]
+Step 17900: loss = 1.95 (0.500 sec) [200.17 data/s]
+Step 18000: loss = 2.27 (0.494 sec) [202.28 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 18478  Precision @ 1: 0.3696  Loss: 1.85
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3672  Precision @ 1: 0.3672  Loss: 1.88
+Step 18100: loss = 1.88 (0.495 sec) [202.17 data/s]
+Step 18200: loss = 1.82 (0.495 sec) [202.01 data/s]
+Step 18300: loss = 1.91 (0.496 sec) [201.73 data/s]
+Step 18400: loss = 1.98 (0.495 sec) [202.10 data/s]
+Step 18500: loss = 2.09 (0.497 sec) [201.33 data/s]
+Step 18600: loss = 1.87 (0.494 sec) [202.31 data/s]
+Step 18700: loss = 2.09 (0.494 sec) [202.41 data/s]
+Step 18800: loss = 1.96 (0.495 sec) [201.89 data/s]
+Step 18900: loss = 1.94 (0.494 sec) [202.30 data/s]
+Step 19000: loss = 1.87 (0.495 sec) [202.17 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 18055  Precision @ 1: 0.3611  Loss: 1.90
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3577  Precision @ 1: 0.3577  Loss: 1.91
+Step 19100: loss = 2.01 (0.496 sec) [201.52 data/s]
+Step 19200: loss = 1.96 (0.495 sec) [201.98 data/s]
+Step 19300: loss = 1.98 (0.494 sec) [202.39 data/s]
+Step 19400: loss = 1.95 (0.495 sec) [202.18 data/s]
+Step 19500: loss = 1.81 (0.495 sec) [202.01 data/s]
+Step 19600: loss = 2.08 (0.495 sec) [202.05 data/s]
+Step 19700: loss = 2.15 (0.495 sec) [201.84 data/s]
+Step 19800: loss = 1.81 (0.496 sec) [201.74 data/s]
+Step 19900: loss = 1.95 (0.494 sec) [202.30 data/s]
+Step 20000: loss = 2.17 (0.497 sec) [201.02 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 18206  Precision @ 1: 0.3641  Loss: 1.90
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3599  Precision @ 1: 0.3599  Loss: 1.91
+Step 20100: loss = 2.07 (0.494 sec) [202.32 data/s]
+Step 20200: loss = 1.97 (0.495 sec) [201.89 data/s]
+Step 20300: loss = 1.94 (0.495 sec) [202.02 data/s]
+Step 20400: loss = 1.82 (0.496 sec) [201.70 data/s]
+Step 20500: loss = 1.98 (0.495 sec) [202.18 data/s]
+Step 20600: loss = 2.02 (0.494 sec) [202.42 data/s]
+Step 20700: loss = 1.90 (0.494 sec) [202.26 data/s]
+Step 20800: loss = 2.15 (0.495 sec) [201.84 data/s]
+Step 20900: loss = 1.82 (0.494 sec) [202.28 data/s]
+Step 21000: loss = 1.86 (0.494 sec) [202.41 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 18796  Precision @ 1: 0.3759  Loss: 1.84
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3736  Precision @ 1: 0.3736  Loss: 1.86
+Step 21100: loss = 1.87 (0.494 sec) [202.35 data/s]
+Step 21200: loss = 1.91 (0.494 sec) [202.30 data/s]
+Step 21300: loss = 1.99 (0.494 sec) [202.31 data/s]
+Step 21400: loss = 2.02 (0.496 sec) [201.45 data/s]
+Step 21500: loss = 1.81 (0.494 sec) [202.48 data/s]
+Step 21600: loss = 2.04 (0.495 sec) [202.17 data/s]
+Step 21700: loss = 1.95 (0.496 sec) [201.52 data/s]
+Step 21800: loss = 1.87 (0.495 sec) [202.14 data/s]
+Step 21900: loss = 1.97 (0.494 sec) [202.29 data/s]
+Step 22000: loss = 2.12 (0.496 sec) [201.55 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 18337  Precision @ 1: 0.3667  Loss: 1.88
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3607  Precision @ 1: 0.3607  Loss: 1.89
+Step 22100: loss = 1.99 (0.495 sec) [202.15 data/s]
+Step 22200: loss = 1.88 (0.496 sec) [201.68 data/s]
+Step 22300: loss = 2.11 (0.494 sec) [202.32 data/s]
+Step 22400: loss = 2.06 (0.495 sec) [201.99 data/s]
+Step 22500: loss = 2.06 (0.495 sec) [202.02 data/s]
+Step 22600: loss = 2.05 (0.497 sec) [201.25 data/s]
+Step 22700: loss = 2.20 (0.494 sec) [202.35 data/s]
+Step 22800: loss = 1.83 (0.494 sec) [202.27 data/s]
+Step 22900: loss = 1.99 (0.495 sec) [202.15 data/s]
+Step 23000: loss = 1.92 (0.498 sec) [200.63 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 18792  Precision @ 1: 0.3758  Loss: 1.84
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3704  Precision @ 1: 0.3704  Loss: 1.85
+Step 23100: loss = 1.91 (0.494 sec) [202.37 data/s]
+Step 23200: loss = 2.04 (0.495 sec) [202.15 data/s]
+Step 23300: loss = 2.01 (0.496 sec) [201.70 data/s]
+Step 23400: loss = 2.11 (0.495 sec) [202.10 data/s]
+Step 23500: loss = 1.91 (0.495 sec) [201.94 data/s]
+Step 23600: loss = 2.10 (0.495 sec) [202.19 data/s]
+Step 23700: loss = 1.99 (0.495 sec) [202.04 data/s]
+Step 23800: loss = 1.97 (0.495 sec) [202.05 data/s]
+Step 23900: loss = 1.93 (0.494 sec) [202.26 data/s]
+Step 24000: loss = 2.02 (0.494 sec) [202.62 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 18989  Precision @ 1: 0.3798  Loss: 1.82
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3731  Precision @ 1: 0.3731  Loss: 1.83
+Step 24100: loss = 1.79 (0.496 sec) [201.75 data/s]
+Step 24200: loss = 2.21 (0.495 sec) [202.14 data/s]
+Step 24300: loss = 2.02 (0.495 sec) [201.96 data/s]
+Step 24400: loss = 1.94 (0.494 sec) [202.34 data/s]
+Step 24500: loss = 1.91 (0.495 sec) [202.19 data/s]
+Step 24600: loss = 1.90 (0.495 sec) [202.09 data/s]
+Step 24700: loss = 1.97 (0.496 sec) [201.74 data/s]
+Step 24800: loss = 1.85 (0.495 sec) [202.17 data/s]
+Step 24900: loss = 2.00 (0.495 sec) [201.98 data/s]
+Step 25000: loss = 2.02 (0.495 sec) [202.01 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 18197  Precision @ 1: 0.3639  Loss: 1.87
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3587  Precision @ 1: 0.3587  Loss: 1.89
+Step 25100: loss = 1.94 (0.496 sec) [201.49 data/s]
+Step 25200: loss = 2.13 (0.495 sec) [201.88 data/s]
+Step 25300: loss = 2.09 (0.494 sec) [202.27 data/s]
+Step 25400: loss = 2.01 (0.495 sec) [202.19 data/s]
+Step 25500: loss = 1.97 (0.495 sec) [202.07 data/s]
+Step 25600: loss = 2.17 (0.494 sec) [202.37 data/s]
+Step 25700: loss = 2.04 (0.495 sec) [201.88 data/s]
+Step 25800: loss = 2.08 (0.495 sec) [201.92 data/s]
+Step 25900: loss = 1.86 (0.494 sec) [202.44 data/s]
+Step 26000: loss = 2.08 (0.495 sec) [202.18 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19192  Precision @ 1: 0.3838  Loss: 1.81
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3800  Precision @ 1: 0.3800  Loss: 1.84
+Step 26100: loss = 1.98 (0.495 sec) [202.03 data/s]
+Step 26200: loss = 1.97 (0.495 sec) [201.96 data/s]
+Step 26300: loss = 2.01 (0.496 sec) [201.72 data/s]
+Step 26400: loss = 1.93 (0.495 sec) [202.20 data/s]
+Step 26500: loss = 1.99 (0.495 sec) [202.06 data/s]
+Step 26600: loss = 1.93 (0.494 sec) [202.45 data/s]
+Step 26700: loss = 1.90 (0.494 sec) [202.31 data/s]
+Step 26800: loss = 2.07 (0.495 sec) [201.87 data/s]
+Step 26900: loss = 2.01 (0.495 sec) [202.01 data/s]
+Step 27000: loss = 2.21 (0.494 sec) [202.24 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19039  Precision @ 1: 0.3808  Loss: 1.84
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3724  Precision @ 1: 0.3724  Loss: 1.86
+Step 27100: loss = 1.97 (0.495 sec) [201.95 data/s]
+Step 27200: loss = 1.78 (0.495 sec) [202.09 data/s]
+Step 27300: loss = 2.12 (0.494 sec) [202.41 data/s]
+Step 27400: loss = 1.93 (0.495 sec) [202.20 data/s]
+Step 27500: loss = 2.08 (0.495 sec) [201.96 data/s]
+Step 27600: loss = 1.63 (0.495 sec) [202.02 data/s]
+Step 27700: loss = 1.98 (0.495 sec) [202.03 data/s]
+Step 27800: loss = 2.16 (0.495 sec) [202.09 data/s]
+Step 27900: loss = 2.07 (0.495 sec) [201.83 data/s]
+Step 28000: loss = 1.91 (0.496 sec) [201.81 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19569  Precision @ 1: 0.3914  Loss: 1.79
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3811  Precision @ 1: 0.3811  Loss: 1.82
+Step 28100: loss = 1.83 (0.494 sec) [202.50 data/s]
+Step 28200: loss = 1.86 (0.496 sec) [201.74 data/s]
+Step 28300: loss = 1.97 (0.495 sec) [202.05 data/s]
+Step 28400: loss = 2.00 (0.496 sec) [201.61 data/s]
+Step 28500: loss = 2.10 (0.494 sec) [202.38 data/s]
+Step 28600: loss = 1.89 (0.495 sec) [201.87 data/s]
+Step 28700: loss = 1.94 (0.494 sec) [202.58 data/s]
+Step 28800: loss = 1.90 (0.495 sec) [202.19 data/s]
+Step 28900: loss = 1.96 (0.495 sec) [202.08 data/s]
+Step 29000: loss = 2.05 (0.495 sec) [201.94 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19139  Precision @ 1: 0.3828  Loss: 1.83
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3784  Precision @ 1: 0.3784  Loss: 1.84
+Step 29100: loss = 2.01 (0.494 sec) [202.50 data/s]
+Step 29200: loss = 1.74 (0.496 sec) [201.66 data/s]
+Step 29300: loss = 2.04 (0.496 sec) [201.47 data/s]
+Step 29400: loss = 1.92 (0.494 sec) [202.24 data/s]
+Step 29500: loss = 1.98 (0.495 sec) [201.90 data/s]
+Step 29600: loss = 1.76 (0.494 sec) [202.57 data/s]
+Step 29700: loss = 1.79 (0.495 sec) [202.09 data/s]
+Step 29800: loss = 1.87 (0.495 sec) [201.83 data/s]
+Step 29900: loss = 1.93 (0.495 sec) [202.22 data/s]
+Step 30000: loss = 1.84 (0.495 sec) [201.93 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19125  Precision @ 1: 0.3825  Loss: 1.82
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3756  Precision @ 1: 0.3756  Loss: 1.84
+Step 30100: loss = 1.91 (0.494 sec) [202.28 data/s]
+Step 30200: loss = 2.15 (0.494 sec) [202.40 data/s]
+Step 30300: loss = 2.07 (0.495 sec) [202.04 data/s]
+Step 30400: loss = 1.85 (0.496 sec) [201.76 data/s]
+Step 30500: loss = 1.87 (0.495 sec) [202.10 data/s]
+Step 30600: loss = 1.85 (0.494 sec) [202.39 data/s]
+Step 30700: loss = 1.94 (0.495 sec) [202.10 data/s]
+Step 30800: loss = 1.89 (0.494 sec) [202.37 data/s]
+Step 30900: loss = 1.90 (0.494 sec) [202.26 data/s]
+Step 31000: loss = 1.78 (0.495 sec) [201.88 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 18701  Precision @ 1: 0.3740  Loss: 1.85
+Validation Data Eval:
+  Num examples: 10000  Num correct: 3679  Precision @ 1: 0.3679  Loss: 1.85
+Step 31100: loss = 2.02 (0.494 sec) [202.29 data/s]
+Step 31200: loss = 1.88 (0.495 sec) [202.11 data/s]
+Step 31300: loss = 2.01 (0.495 sec) [202.21 data/s]
+Step 31400: loss = 2.00 (0.494 sec) [202.39 data/s]
+Step 31500: loss = 1.87 (0.497 sec) [201.23 data/s]
+Step 31600: loss = 1.99 (0.494 sec) [202.26 data/s]
+Step 31700: loss = 1.94 (0.494 sec) [202.29 data/s]
+Step 31800: loss = 1.77 (0.494 sec) [202.34 data/s]
+Step 31900: loss = 1.93 (0.494 sec) [202.37 data/s]
+Step 32000: loss = 1.84 (0.495 sec) [201.91 data/s]
+Training Data Eval:
+  Num examples: 50000  Num correct: 19141  Precision @ 1: 0.3828  Loss: 1.85
