@@ -104,6 +104,23 @@ def run_training(extra_opts={}):
         precision_validation_summary = tf.summary.scalar('precision/validation',
                                                          precision_validation)
         graph = tf.get_default_graph()
+        
+        # count number of parametrs
+                total_parameters = 0
+        for variable in tf.trainable_variables():
+            # shape is an array of tf.Dimension
+            shape = variable.get_shape()
+            print(shape)
+            print(len(shape))
+            variable_parameters = 1
+            for dim in shape:
+                print(dim)
+                variable_parameters *= dim#.value
+            print(variable_parameters)
+            total_parameters += variable_parameters
+        print(total_parameters)
+        ##
+        
         loss = graph.get_tensor_by_name('loss:0')
         train_op = graph.get_operation_by_name('train_op')
         correct_count = graph.get_tensor_by_name('correct_count:0')
